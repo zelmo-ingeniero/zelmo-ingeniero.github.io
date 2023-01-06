@@ -2,14 +2,11 @@
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navegacion{
-    padding: 10px;
-    font-size: 30px;
-}
-.contenedor-proyectos{
-    display: flex;
-}
 @media screen and (max-width: 480px) {
+    .navegacion{
+        padding: 10px;
+        font-size: 30px;
+    }
     .titulo1{
         font-size: 40px;
     }
@@ -24,6 +21,10 @@
     }
 }
 @media screen and (max-width: 769px){
+    .navegacion{
+        padding: 10px;
+        font-size: 30px;
+    }
     .titulo1{
         font-size: 40px;
     }
@@ -38,6 +39,10 @@
     }    
 }
 @media screen and (max-width: 1024px){
+    .navegacion{
+        padding: 10px;
+        font-size: 30px;
+    }
     .titulo1{
         font-size: 40px;
     }
