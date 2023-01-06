@@ -1,24 +1,61 @@
 *{
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
     .navegacion{
-        padding: 10px;
-        font-size: 30px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        background: #005500;
+    }
+    .navegacion a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .cabeza{
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background: linear-gradient(to bottom right, #00cc00, #00cccc);
+        text-align: center;
+        color: #fff;
     }
     .titulo1{
         font-size: 40px;
     }
     .titulo2{
+        font-family: monospace;
+        padding-top: 20px;
+        padding-bottom: 20px;
         font-size: 30px;
     }
     .p1{
+        width: 80%;
+        margin: auto;
         font-size: 16px;
     }
-    .contenedor-proyectos{
+    .proyectos-titulo{
+        height: 80px;
+        background: #080808;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .proyecto{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background: linear-gradient( to bottom, pink, white );
+    }
+    .proyecto h2{
         width: 100%;
     }
+    
 }
 @media screen and (max-width: 769px){
     .navegacion{
@@ -39,20 +76,5 @@
     }    
 }
 @media screen and (max-width: 1024px){
-    .navegacion{
-        padding: 10px;
-        font-size: 30px;
-    }
-    .titulo1{
-        font-size: 40px;
-    }
-    .titulo2{
-        font-size: 30px;
-    }
-    .p1{
-        font-size: 16px;
-    }
-    .contenedor-proyectos{
-        width: 100%;
-    }
+    
 }
