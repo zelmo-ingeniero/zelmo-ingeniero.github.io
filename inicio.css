@@ -12,3 +12,18 @@
 .proyecto{
     width: 100%;
 }
+@media screen and (max-width: 480px) {
+    .contenedor-proyectos{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 769px){
+    .contenedor-proyectos{
+        width: 100%;
+    }    
+}
+@media screen and (max-width: 1024px){
+    .contenedor-proyectos{
+        width: 100%;
+    }
+}
