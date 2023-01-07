@@ -1,6 +1,13 @@
 *{
     margin: 0px;
     font-family: Inter;
+    /*
+    Consolas
+    Cascadia code
+    #2AB45B
+    #002EF2
+    #383838
+    */
 }
 @media screen and (max-width: 425px) {
     .barra{
@@ -26,6 +33,7 @@
         color: #fff;
     }
     .titulo1{
+
         font-size: 40px;
     }
     .titulo2{
