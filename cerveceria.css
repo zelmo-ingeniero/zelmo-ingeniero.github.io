@@ -19,7 +19,6 @@
         font-size: 16px;
         font-weight: 700;
     }    
-    
     .pie{
         padding: 20px;
         background: #424242;
@@ -29,4 +28,9 @@
         color: #fff;
         text-decoration: none;        
     }
+    .leible{
+        padding-bottom: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }    
 }
