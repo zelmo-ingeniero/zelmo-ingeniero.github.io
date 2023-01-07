@@ -4,11 +4,18 @@
 }
 @media screen and (max-width: 425px) {
     p, .leible{
-        padding-bottom: 10px;
+        padding: 0px 10px 10px 10px;
         font-size: 16px;
         line-height: 24px;
     }
     h1{
-        padding: 100px 0px 20px 0px;
+        padding: 100px 10px 20px 10px;
+    }
+    h2, h3{
+        padding: 0px 10px;
+    }
+    .texto-pequeño{
+        color: #787878;
+        font-size: 12px;
     }
 }
