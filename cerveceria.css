@@ -3,11 +3,6 @@
     font-family: Inter;
 }
 @media screen and (max-width: 425px) {
-    p, .leible{
-        padding: 0px 10px 10px 10px;
-        font-size: 16px;
-        line-height: 24px;
-    }
     h1{
         padding: 100px 10px 20px 10px;
     }
