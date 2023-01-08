@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelmo | Project</title>
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css"/>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="proyecto.css">
+</head>
+<body>
+    <nav class="barra">
+        <a href="index.html" class="ref">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="sobremi.html" class="ref">About me</a>
+    </nav>
+    <p>
+        
+    </p>
+    <h1>My role</h1>
+    <p>
+        
+    </p>
+    <h1>Project Goal</h1>
+    <p>
+        
+    </p>    
+    <h1>Emphatysing</h1>
+    <h2>Users pain points</h2>
+    <ul>
+        <li>
+        </li>
+    </ul>
+    <img src="" alt="persona1">
+    <img src="" alt="persona2">
+    <h1>Principal constraints</h1>
+    <ul>
+        <li></li>
+    </ul>
+    <h1>Desing strategy</h1>
+    <h2>Site map</h2>
+    <img src="" alt="mapa del sitio mejorado supongo XD">
+    <p>wireframes de papel de 1 tamaño</p>
+    <figure>
+        <img src="" alt="wrfrm1">
+        <figcaption>notas</figcaption>
+        <img src="" alt="wrfrm2">
+        <figcaption>notas</figcaption>
+        <img src="" alt="wrfrm3">
+        <figcaption>notas</figcaption>
+    </figure>
+    <p>wireframes digitales y en diferentes tamañitos</p>
+    <figure>
+        <img src="" alt="wrfrm1">
+        <figcaption>notas</figcaption>
+        <img src="" alt="wrfrm2">
+        <figcaption>notas</figcaption>
+        <img src="" alt="wrfrm3">
+        <figcaption>notas</figcaption>
+    </figure>
+    <h1>Prototyping</h1>
+    <img src="" alt="prototipo">
+    <a href="#">See prototype</a>
+    <h1>Test in users</h1>
+    <div class="texto-little">
+        This project was executed inside a course of UX desing from Google, i
+        did really not a test with real people, most feedback was supossed
+    </div>
+    <h2>Planning the study</h2>
+    <img src="" alt="plan de estudio pero pasado a imagenes">
+    <h2>Sintesizing</h2>
+    <img src="" alt="diagramas de afinidad y prioridades tal vez">    
+    <h1>Results</h1>
+    <h2>Research insights</h2>
+    <ol>
+        <li>
+            
+        </li>
+        <li>
+            
+        </li>
+        <li>
+    </ol>
+    <h2>Final prototype</h2>
+    <img src="" alt="prototipo">
+    <a href="#">See prototype</a>
+    <h2>Next steps</h2>
+    <ol>
+        <li>
+            
+        </li>
+        <li>
+            
+        </li>
+        <li>
+            
+        </li>
+    </ol>
+    <h1>What i learned</h1>
+    <p>
+        
+    </p>
+</body>
+</html>
