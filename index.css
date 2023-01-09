@@ -83,8 +83,12 @@
         line-height: 50px;
     }
     .pie{
-        padding: 20px;
-        background: #424242;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: #383838;
         color: #fff;
     }
     .ref{
