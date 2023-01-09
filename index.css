@@ -28,35 +28,34 @@
     }
     
     .cabeza{
-        padding: 60px 0px 20px 0px;
+        padding: 100px 5px 20px 5px;
         background: linear-gradient(to bottom right, #24b45b, #002ef2);
         text-align: center;
         color: #fff;
     }
-    .titulo1{
+    .tamano-40{
         font-size: 40px;
     }
     .titulo2{
-        font-family: monospace;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 36px;
+        padding: 20px 0px;
+        font-family: 'Cambria console', Consolas, monospace;
+        font-size: 32px;
     }
-    .p1{
+    .explicacion{
         width: 80%;
         margin: auto;
         font-size: 14px;
+        font-weight: 400;
     }
     .enlaces{
-        margin: 80px 0px 40px 0px;
+        margin: 100px 0px 40px 0px;
     }
     .enlaces a{
-        width: 30px;
-        height: 30px;
         display: inline-block;
         margin: 5px;
         color: #fff;
-        font-size: 24px;
+        font-size: 30px;
+        line-height: 30px;
     }
     .proyecto{
         padding: 10px;
@@ -64,17 +63,19 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        background: linear-gradient(#e0e0e0, #787878);
+        background: linear-gradient(#787878, #e0e0e0);
         color: #fff;
     }
-    .proyecto h2{
+    .proyecto h1{
         width: 100%;
-        padding: 50px 0px;
+        padding: 20px 0px 40px 0px;
+        text-align: left;
+        font-family: 'Cambria console', Consolas, monospace;
     }
     .boton{
         width: 200px;
         height: 50px;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.25);
         border-radius: 25px;
         text-align: center;
         font-size: 18px;
