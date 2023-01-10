@@ -4,8 +4,9 @@
     /*
     Consolas
     Cascadia code
-    #2AB45B
-    #002EF2
+    #primario 2AB45B
+    #primario claro 72aa88
+    #segundario 002EF2
     #383838
     */
 }
@@ -23,13 +24,14 @@
     }
     .barra a{
         padding: 10px 20px;
+        background: none;
         font-size: 16px;
         font-weight: 700;
     }
     
     .cabeza{
         padding: 100px 5px 20px 5px;
-        background: linear-gradient(to bottom right, #24b45b, #002ef2);
+        background: linear-gradient(to bottom right, #72aa88, #002ef2);
         text-align: center;
         color: #fff;
     }

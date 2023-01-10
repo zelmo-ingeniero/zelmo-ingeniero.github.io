@@ -7,6 +7,7 @@
 @media screen and (max-width: 425px) {
     h1{
         padding: 100px 10px 20px 10px;
+        color: #00ee00;
         font-family: 'Cambria console', Consolas, monospace;
     }
     h2, h3{
