@@ -133,8 +133,11 @@
     }
     @media (hover: hover){
         .boton:hover{
-            background: #000000;
+            background: rgba(0,0,0,0.75);
         }
+    }
+    .boton:active{
+        background: #000000;
     }
 }
 @media screen and (max-width: 769px){
