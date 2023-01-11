@@ -13,8 +13,108 @@
     h2, h3{
         padding: 0px 10px;
     }
+    .rectangulos{
+        width: 90%;
+        margin: 60px auto;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+    }
+    .rectangulos li{
+        width: auto;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        list-style: none;
+        border: 1px solid #C8C8C8;
+        border-radius: 5px;        
+        color: #C8C8C8;
+        font-size: 18px;
+    }
+    .t-educacion{
+        width: 90%;
+        margin: 0px auto;
+        border-collapse: collapse;
+    }
+    .c1{
+        width: 20%;
+        padding: 5px;
+        background: none;
+        text-align: right;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .c2{
+        width: 70%;
+        padding: 20px 5px;
+        background: none;
+        font-size: 14px;
+    }
+    .c2 ul{
+        padding-left: 10px;
+    }
+    .t-educacion tr:nth-child(odd){
+        background: #212121;
+    }
     .texto-little{
         color: #787878;
         font-size: 12px;
     }
+/*
+    table{
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        /*evita que el texto se salga
+        
+        border-collapse: collapse;
+    }
+    table th{
+        font-size: 28px;
+    }
+    table th, table td:first-child{
+        width: 100px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+        background-color: #55aa55;
+        color: white;
+        font-weight: 600;            
+    }
+    table tr:nth-child(odd){
+        background: #f0f0f0;
+    }
+    table tr:hover, table td:hover{
+        background-color: rgba(0,0,0,0.25);
+    }
+    table td{
+        border: 1px solid gray;
+        padding: 5px 10px;
+    }
+    table td span{
+        margin-right: 15px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    table td span:nth-child(1){
+        color: gray;
+    }
+    table td span:nth-child(2){
+        color: #55aa55;
+    }
+    table td span:nth-child(3){
+        color: #aa5555;
+        margin-right: 0px;            
+    }
+    table td span:nth-child(1):hover{
+        color: white;
+    }
+    table td span:nth-child(2):hover{
+        color: white;
+    }
+    table td span:nth-child(3):hover{
+        color: white;
+        margin-right: 0px;            
+    }*/
 }
