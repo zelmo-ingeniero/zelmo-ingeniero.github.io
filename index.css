@@ -95,15 +95,24 @@
         font-weight: 700;
     }
     .cuadricula{
+        width: 100%;
+        margin: 40px 0px;
         display: grid;
-        grid-template-columns: 1fr 1fr;        
-    }
-    .c-titulo{
-        grid-column-start: 1;
-        grid-column-end: -1;
+        grid-gap: 10px;
+        text-align: center;
+        font-size: 24px;
     }
     .item-lista{
-
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .item-lista i{
+        width: 30px;
+        height: 30px;
+    }
+    .item-lista p{
+        font-weight: 400;
     }
     .ref{
         color: #fff;
