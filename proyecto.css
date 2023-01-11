@@ -7,11 +7,11 @@
 @media screen and (max-width: 425px) {
     h1{
         padding: 100px 10px 20px 10px;
-        color: #00ee00;
+        color: #3cf73c;
         font-family: 'Cambria console', Consolas, monospace;
     }
     h2, h3{
-        padding: 0px 10px;
+        padding: 0px 10px 10px 10px;
     }
     .rectangulos{
         width: 90%;
@@ -60,6 +60,9 @@
         max-width: 80%;
         margin: auto;
         padding-left: 20px;
+    }
+    img{
+        width: 100%;
     }
     .t-chico{
         padding: 0px 10px 10px 10px;

@@ -1,12 +1,14 @@
 *{
     margin: 0px;
-    font-family: Inter;
+    font-family: Inter, "sans-serif";
     /*
     Consolas
     Cascadia code
-    #primario 2AB45B
-    #primario claro 72aa88
-    #segundario 002EF2
+    #titulos 3cf73c
+    #primario 286428
+    #primario claro 515851
+    #azul 9EFFFF
+    #rojo FF9696
     #212121
     #383838
     #787878
@@ -34,7 +36,7 @@
     
     .cabeza{
         padding: 70px 5px 20px 5px;
-        background: linear-gradient(to bottom right, #000000, #78ff88);
+        background: linear-gradient(to bottom right, #286428, #515851);
         text-align: center;
         color: #fff;
     }
