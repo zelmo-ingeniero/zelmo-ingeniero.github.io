@@ -64,6 +64,10 @@
     img{
         width: 100%;
     }
+    video{
+        width: 50%;
+        margin: 10px calc(25%);
+    }
     .t-chico{
         padding: 0px 10px 10px 10px;
         font-size: 12px;
