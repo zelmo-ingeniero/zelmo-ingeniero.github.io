@@ -68,6 +68,11 @@
         width: 50%;
         margin: 10px calc(25%);
     }
+    .i-4{
+        width: 49%;
+        margin: 0px;
+        padding: 0px;
+    }
     .t-chico{
         padding: 0px 10px 10px 10px;
         font-size: 12px;
