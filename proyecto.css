@@ -11,7 +11,7 @@
         font-family: 'Cambria console', Consolas, monospace;
     }
     h2, h3{
-        padding: 10px;
+        padding: 20px 5px 10px 10px;
     }
     .rectangulos{
         width: 90%;
@@ -22,7 +22,6 @@
         justify-content: right;
     }
     .rectangulos li{
-        width: auto;
         margin: 5px;
         padding: 5px 10px 5px 10px;
         list-style: none;
@@ -63,6 +62,7 @@
     }
     img{
         width: 100%;
+        margin: 5px 0px;
     }
     video{
         width: 50%;
@@ -78,35 +78,77 @@
         font-size: 12px;
     }
 }
-@media screen and (min-width: 481px) and (max-width: 728px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     h1{
         padding: 100px 10px 20px 10px;
         color: #3cf73c;
         font-family: 'Cambria console', Consolas, monospace;
+        font-size: 34px;
     }
     h2, h3{
         padding: 10px;
     }
     .rectangulos{
-        width: 90%;
-        margin: 60px auto 0px auto;
+        width: 75%;
+        margin: 60px 20px 0px auto;
         padding: 0px;
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
     }
     .rectangulos li{
-        width: auto;
         margin: 5px;
-        padding: 5px 10px 5px 10px;
+        padding: 10px;
         list-style: none;
         border: 1px solid #C8C8C8;
-        border-radius: 5px;        
+        border-radius: 10px;
         color: #C8C8C8;
-        font-size: 18px;
+        font-size: 20px;
     }
-    
+    .t-educacion{
+        border-collapse: collapse;
+    }
+    .c1{
+        width: 20%;
+        background: none;
+        text-align: right;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .c2{
+        padding: 20px 10px;
+        background: none;
+        font-size: 16px;
+    }
+    .c2 ul{
+        padding-left: 20px;
+    }
+    .t-educacion tr:nth-child(odd){
+        background: #212121;
+    }
+    .lista{
+        max-width: 90%;
+        margin: auto;
+        padding-left: 20px;
+    }
+    img{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    video{
+        width: 75%;
+        margin: 0px calc(25% / 2);
+    }
+    .i-4{
+        width: 49%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .t-chico{
+        padding: 0px 10px 10px 10px;
+        font-size: 12px;
+    }
 }
-@media screen and (min-width: 729px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
     
 }

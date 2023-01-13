@@ -82,7 +82,8 @@
     }
     .boton{
         height: 50px;
-        margin: 10px;
+        max-width: 75%;
+        margin: 10px auto;
         padding: 0px 20px;
         display: block;
         background: rgba(0,0,0,0.5);
@@ -154,7 +155,6 @@
         font-size: 18px;
         font-weight: 700;
     }
-    
     .cabeza{
         padding: 90px 0px 20px 0px;
         background: linear-gradient(to bottom right, #286428, #515851);
@@ -203,7 +203,8 @@
     }
     .boton{
         height: 50px;
-        margin: 10px;
+        max-width: 60%;
+        margin: 10px auto;
         padding: 0px 20px;
         display: block;
         background: rgba(0,0,0,0.5);
@@ -260,9 +261,7 @@
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1440px){
-    .cabeza{
-        color: blue;
-    }
+    
     @media (hover: hover){
         .boton:hover{
             background: rgba(0,0,0,0.75);
