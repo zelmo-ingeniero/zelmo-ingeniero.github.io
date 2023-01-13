@@ -397,8 +397,16 @@
         background: #000;
     }
     @media (hover: hover){
+        .ref:hover{
+            scale: 1.1;
+        }
+        .navegacion a:hover{
+            color: red;
+            background: red;
+            /*background: rgba(255,255,255,0.5);*/
+        }
         .boton:hover{
-            background: #000;
+            background: rgba(0,0,0,0.75);
         }
     }
     

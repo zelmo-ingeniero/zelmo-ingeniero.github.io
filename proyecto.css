@@ -199,6 +199,11 @@
     .t-educacion tr:nth-child(odd){
         background: #212121;
     }
+    .lista{
+        max-width: 75%;
+        margin: auto;
+        padding-left: 20px;
+    }
     img{
         width: 100%;
         margin: 10px 0px;
