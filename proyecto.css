@@ -151,5 +151,79 @@
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1440px) {
-    
+    h1{
+        padding: 100px 10px 20px 10px;
+        color: #3cf73c;
+        font-family: 'Cambria console', Consolas, monospace;
+        font-size: 44px;
+    }
+    h2, h3{
+        padding: 10px;
+    }
+    .rectangulos{
+        width: 75%;
+        margin: 60px 20px 0px auto;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+    }
+    .rectangulos li{
+        margin: 5px;
+        padding: 10px;
+        list-style: none;
+        border: 1px solid #C8C8C8;
+        border-radius: 10px;
+        color: #C8C8C8;
+        font-size: 20px;
+    }
+    .t-educacion{
+        width: 60%;
+        margin: auto;
+        border-collapse: collapse;
+    }
+    .c1{
+        background: none;
+        text-align: right;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .c2{
+        padding: 20px 10px;
+        background: none;
+        font-size: 18px;
+    }
+    .c2 ul{
+        padding-left: 20px;
+    }
+    .t-educacion tr:nth-child(odd){
+        background: #212121;
+    }
+    img{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .esquemas{
+        width: 50%;
+        margin: 10px auto;
+    }
+    video{
+        width: 50%;
+        margin: 0px 25%;
+    }
+    .i-4{
+        width: 49%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .t-chico{
+        padding: 0px 10px 10px 10px;
+        color: #c8c8c8;
+        font-size: 16px;
+    }
+    @media (hover: hover){
+        .rectangulos li:hover{
+            border: 1px solid #fff;
+        }
+    }
 }

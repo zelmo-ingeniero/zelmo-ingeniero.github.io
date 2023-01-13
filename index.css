@@ -138,6 +138,7 @@
     }
     .boton:active{
         scale: 0.8;
+        background: #000;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
@@ -262,6 +263,10 @@
         font-size: 16px;
         line-height: 24px;
     }
+    .boton:active{
+        scale: 0.8;
+        background: #000;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 1440px){
     .barra{
@@ -288,7 +293,7 @@
         color: #fff;
     }
     .titulo1{
-        font-size: 100px;
+        font-size: 80px;
     }
     .titulo2{
         padding: 40px;
@@ -384,15 +389,17 @@
     }
     p, .leible{
         padding: 0px 10px 10px 10px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    @media (hover: hover){/*
-        .boton:hover{
-            background: #000;
-        }*/
+        font-size: 18px;
+        line-height: 26px;
     }
     .boton:active{
         scale: 0.8;
+        background: #000;
     }
+    @media (hover: hover){
+        .boton:hover{
+            background: #000;
+        }
+    }
+    
 }
