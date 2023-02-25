@@ -150,7 +150,7 @@
         font-size: 16px;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px){
     h1{
         padding: 100px 10px 20px 10px;
         color: #3cf73c;
