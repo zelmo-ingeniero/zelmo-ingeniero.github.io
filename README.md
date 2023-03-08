@@ -1,4 +1,4 @@
-NOTA PARA MI
+# NOTA PARA MI
 Me falta:
 - poner mas CV
 - mejorar el espacio vacio y tamaños de letra
