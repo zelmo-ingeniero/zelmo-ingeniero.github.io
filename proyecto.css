@@ -43,14 +43,12 @@
         font-size: 18px;
         font-weight: 700;
     }
-    .c2{
-        width: 70%;
-        padding: 20px 5px;
-        background: none;
-        font-size: 14px;
-    }
     .c2 ul{
-        padding-left: 10px;
+        background: none;
+        padding-left: 20px;
+    }
+    .c2 ul li{
+        background: none;
     }
     .t-educacion tr:nth-child(odd){
         background: #212121;
@@ -115,13 +113,12 @@
         font-size: 20px;
         font-weight: 700;
     }
-    .c2{
-        padding: 20px 10px;
-        background: none;
-        font-size: 16px;
-    }
     .c2 ul{
+        background: none;
         padding-left: 20px;
+    }
+    .c2 ul li{
+        background: none;
     }
     .t-educacion tr:nth-child(odd){
         background: #212121;
@@ -194,7 +191,11 @@
         font-size: 18px;
     }
     .c2 ul{
+        background: none;
         padding-left: 20px;
+    }
+    .c2 ul li{
+        background: none;
     }
     .t-educacion tr:nth-child(odd){
         background: #212121;
