@@ -8,7 +8,10 @@
     h1{
         padding: 100px 10px 20px 10px;
         color: #3cf73c;
-        font-family: 'Cambria console', Consolas, monospace;
+        font-family: Consolas, 'Courier New', monospace;
+        /*
+        font-family: 'Cambria code', Consolas, monospace;
+        */
     }
     h2, h3{
         padding: 20px 5px 10px 10px;

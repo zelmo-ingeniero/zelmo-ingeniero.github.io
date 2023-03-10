@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    font-family: Inter, "sans-serif";
+    font-family: Inter, arial,  "sans-serif";
     /*
     Consolas
     Cascadia code
@@ -17,7 +17,7 @@
 }
 
 @media screen and (max-width: 480px){
-    .barra{
+    .bar{
         width: 100%;
         height: 40px;
         position: fixed;
@@ -28,44 +28,43 @@
         background: rgba(0,0,0,0.5);
         color:white; 
     }
-    .barra a{
+    .bar-button{
         padding: 10px 20px;
         background: none;
         font-size: 16px;
         font-weight: 700;
     }
-    
-    .cabeza{
+    .head{
         padding: 70px 5px 20px 5px;
         background: linear-gradient(to bottom right, #286428, #515851);
         text-align: center;
         color: #fff;
     }
-    .titulo1{
+    .big-title{
         font-size: 40px;
     }
-    .titulo2{
+    .medium-title{
         padding: 20px 5px;
         font-family: 'Cambria console', Consolas, monospace;
         font-size: 32px;
     }
-    .explicacion{
+    .head-text{
         width: 80%;
         margin: auto;
         font-size: 14px;
         font-weight: 400;
     }
-    .enlaces{
+    .social-links{
         margin: 80px 0px 30px 0px;
     }
-    .enlaces a{
+    .social-links-ref{
         display: inline-block;
         margin: 5px;
         color: #fff;
         font-size: 30px;
         line-height: 30px;
     }
-    .proyecto{
+    .project{
         padding: 10px;
         display: flex;
         align-items: center;
@@ -74,48 +73,45 @@
         background: linear-gradient(#787878, #e0e0e0);
         color: #fff;
     }
-    .proyecto h1{
+    .project-name{
         width: 100%;
         padding: 20px 0px 40px 0px;
         text-align: left;
-        font-family: 'Cambria console', Consolas, monospace;
     }
-    .boton{
+    .button{
         height: 50px;
         max-width: 75%;
         margin: 10px auto;
         padding: 0px 20px;
         display: block;
         background: rgba(0,0,0,0.5);
+        border: 1px solid #C8C8C8;
         border-radius: 25px;
         text-align: center;
         font-size: 18px;
         font-weight: 700;
         line-height: 50px;
     }
-    .pie{
+    .footer{
         max-width: 100%;
-        padding: 20px 10px 60px 10px;
+        padding: 60px 5px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         background: #383838;
         color: #fff;
-        font-weight: 700;
     }
-    .cuadricula{
+    .grid{
         width: 100%;
-        margin: 40px 0px;
         display: grid;
         grid-gap: 10px;
         text-align: center;
-        font-size: 24px;
     }
-    .c-titulo{
+    .grid-title{
         font-size: 24px;
         font-family: 'Cambria console', Consolas, monospace;
     }
-    .item-lista{
+    .grid-square{
         margin: auto;
         display: flex;
         align-items: center;
@@ -131,7 +127,7 @@
         color: #fff;
         text-decoration: none;        
     }
-    p, .leible{
+    .leible{
         padding: 0px 10px 10px 10px;
         font-size: 16px;
         line-height: 24px;
