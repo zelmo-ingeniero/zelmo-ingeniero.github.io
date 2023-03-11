@@ -5,29 +5,13 @@
     font-family: Inter, arial, sans-serif;
 }
 @media screen and (max-width: 480px) {
-    .item-lista i{
-        width: 30px;
-        height: 30px;
-    }
-    .item-lista p{
-        font-weight: 400;
-    }
-    .leible{
-        padding: 0px 10px 10px 10px;
-        font-size: 16px;
-        line-height: 24px;
-    }h1{
-        padding: 100px 10px 20px 10px;
+    .title-green{
+        padding: 100px 5px 20px 5px;
         color: #3cf73c;
         font-family: Consolas, 'Courier New', monospace;
-        /*
-        font-family: 'Cambria code', Consolas, monospace;
-        */
+        /*font-family: 'Cambria code', Consolas, monospace;*/
     }
-    h2, h3{
-        padding: 20px 5px 10px 10px;
-    }
-    .rectangulos{
+    .list-r{
         width: 90%;
         margin: 60px auto 0px auto;
         padding: 0px;
@@ -35,46 +19,67 @@
         flex-wrap: wrap;
         justify-content: right;
     }
-    .rectangulos li{
+    .list-r-item{
         margin: 5px;
-        padding: 5px 10px 5px 10px;
+        padding: 5px 10px;
         list-style: none;
-        border: 1px solid #C8C8C8;
+        border: 1px solid #E1E1E1;
         border-radius: 5px;        
-        color: #C8C8C8;
-        font-size: 18px;
+        color: #E1E1E1;
+        font-size: 16px;
+        font-family: Consolas, 'Courier New', monospace;
     }
-    .t-educacion{
-        width: 90%;
+    .readable{
+        padding: 0px 10px 10px 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    img{
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .table-edu{
+        width: calc(100% - 10px);
         margin: 0px auto;
         border-collapse: collapse;
     }
-    .c1{
-        width: 20%;
+    .col-1{
         padding: 5px;
         background: none;
         text-align: right;
         font-size: 18px;
         font-weight: 700;
     }
-    .c2 ul{
-        background: none;
-        padding-left: 20px;
-    }
-    .c2 ul li{
+    .col-2{
         background: none;
     }
-    .t-educacion tr:nth-child(odd){
+    .table-edu-list{
+        padding: 0px 0px 0px 5px;
+        background: none;
+    }
+    .table-edu-list-item{
+        padding: 5px 0px;
+        background: none;
+        line-height: 20px;
+    }
+    .table-edu-row:nth-child(odd){
         background: #212121;
+    }
+    /*
+    h2, h3{
+        padding: 20px 5px 10px 10px;
+    }
+    .item-lista i{
+        width: 30px;
+        height: 30px;
+    }
+    .item-lista p{
+        font-weight: 400;
     }
     .lista{
         max-width: 80%;
         margin: auto;
         padding-left: 20px;
-    }
-    img{
-        width: 100%;
-        margin: 5px 0px;
     }
     video{
         width: 50%;
@@ -89,13 +94,13 @@
         padding: 0px 10px 10px 10px;
         font-size: 12px;
     }
-
+    */
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    h1{
+    .title-green{
         padding: 100px 10px 20px 10px;
         color: #3cf73c;
-        font-family: 'Cambria console', Consolas, monospace;
+        font-family: Consolas, 'Courier New', monospace;
         font-size: 34px;
     }
     h2, h3{
