@@ -5,8 +5,8 @@
     Consolas
     Cascadia code
     #titulos 3cf73c
-    #primario 286428
-    #primario claro 515851
+    #primary 286428
+    #primary clear 515851
     #azul 9EFFFF
     #rojo FF9696
     #212121
@@ -15,14 +15,16 @@
     #C8C8C8
     */
 }
-
+.m-5{
+    margin: 5px;
+}
+.ref{
+    color: #fff;
+    text-decoration: none;
+}
 @media screen and (max-width: 480px){
-    .m-5{
-        margin: 5px;
-    }
     .bar{
         width: 100%;
-        height: 40px;
         position: fixed;
         top: 0;
         display: flex;
@@ -60,7 +62,7 @@
     .social-links{
         margin: 80px 0px 30px 0px;
     }
-    .social-links-ref{
+    .social-links .ref{
         display: inline-block;
         margin: 5px;
         color: #fff;
@@ -127,15 +129,10 @@
     .grid-text{
         font-size: 14px;
     }
-    .ref{
-        color: #fff;
-        text-decoration: none;
-    }
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
-    .barra{
+    .bar{
         width: 100%;
-        height: 50px;
         position: fixed;
         top: 0;
         display: flex;
@@ -144,43 +141,43 @@
         background: rgba(0,0,0,0.5);
         color:white; 
     }
-    .barra a{
+    .bar-button{
         padding: 20px;
         background: none;
         font-size: 18px;
         font-weight: 700;
     }
-    .cabeza{
+    .head{
         padding: 90px 0px 20px 0px;
         background: linear-gradient(to bottom right, #286428, #515851);
         text-align: center;
         color: #fff;
     }
-    .titulo1{
+    .big-title{
         font-size: 70px;
     }
-    .titulo2{
+    .medium-title{
         padding: 40px 10px;
         font-family: 'Cambria console', Consolas, monospace;
         font-size: 36px;
     }
-    .explicacion{
+    .head-text{
         width: 60%;
         margin: auto;
         font-size: 18px;
         font-weight: 400;
     }
-    .enlaces{
-        margin: 100px 0px 40px 0px;
+    .social-links{
+        margin: 80px 0px 40px 0px;
     }
-    .enlaces a{
+    .social-links .ref{
         display: inline-block;
         margin: 10px;
         color: #fff;
         font-size: 30px;
         line-height: 30px;
     }
-    .proyecto{
+    .project{
         padding: 10px;
         display: flex;
         align-items: center;
@@ -189,29 +186,29 @@
         background: linear-gradient(to bottom right, #787878, #e0e0e0);
         color: #fff;
     }
-    .proyecto h1{
+    .project-name{
         width: 100%;
         padding: 20px 0px 60px 0px;
         text-align: left;
-        font-family: 'Cambria console', Consolas, monospace;
         font-size: 34px;
     }
-    .boton{
+    .button{
         height: 50px;
         max-width: 60%;
         margin: 10px auto;
         padding: 0px 20px;
         display: block;
         background: rgba(0,0,0,0.5);
+        border: 1px solid #c1c1c1;
         border-radius: 25px;
         text-align: center;
         font-size: 24px;
         font-weight: 700;
         line-height: 50px;
     }
-    .pie{
+    .footer{
         max-width: 100%;
-        padding: 20px 10px 60px 10px;
+        padding: 60px 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -219,50 +216,31 @@
         color: #fff;
         font-weight: 700;
     }
-    .cuadricula{
+    .grid{
         width: 100%;
-        margin: 40px 0px;
+        margin: 0px 0px 40px 0px;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 20px;
         grid-template-columns: 1fr 1fr;
         text-align: center;
-        font-size: 24px;
     }
-    .c-titulo{
+    .grid-title{
         grid-column: span 2;
-        font-size: 28px;
+        font-size: 32px;
         font-family: 'Cambria console', Consolas, monospace;
     }
-    .item-lista{
+    .grid-square{
         margin: auto;
         display: flex;
         align-items: center;
     }
-    .item-lista i{
-        width: 30px;
-        height: 30px;
-    }
-    .item-lista p{
-        font-weight: 400;
-    }
-    .ref{
-        color: #fff;
-        text-decoration: none;        
-    }
-    p, .leible{
-        padding: 0px 10px 10px 10px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .boton:active{
-        scale: 0.8;
-        background: #000;
+    .grid-text{
+        font-size: 18px;
     }
 }
 @media screen and (min-width: 769px){
-    .barra{
+    .bar{
         width: 100%;
-        height: 50px;
         position: fixed;
         top: 0;
         display: flex;
@@ -271,43 +249,43 @@
         background: rgba(0,0,0,0.5);
         color:white; 
     }
-    .barra a{
+    .bar-button{
         padding: 20px;
         background: none;
         font-size: 18px;
         font-weight: 700;
     }
-    .cabeza{
+    .head{
         padding: 90px 0px 20px 0px;
         background: linear-gradient(to bottom right, #286428, #515851);
         text-align: center;
         color: #fff;
     }
-    .titulo1{
+    .big-title{
         font-size: 80px;
     }
-    .titulo2{
+    .medium-title{
         padding: 40px;
         font-family: 'Cambria console', Consolas, monospace;
         font-size: 50px;
     }
-    .explicacion{
+    .head-text{
         width: 60%;
         margin: auto;
         font-size: 20px;
         font-weight: 400;
     }
-    .enlaces{
+    .social-links{
         margin: 100px 0px 40px 0px;
     }
-    .enlaces a{
+    .social-links .ref{
         display: inline-block;
         margin: 10px;
         color: #fff;
         font-size: 30px;
         line-height: 30px;
     }
-    .proyecto{
+    .project{
         padding: 10px;
         display: flex;
         align-items: center;
@@ -316,29 +294,29 @@
         background: linear-gradient(to bottom right, #787878, #e0e0e0);
         color: #fff;
     }
-    .proyecto h1{
+    .project-name{
         width: 100%;
         padding: 20px 0px 60px 0px;
         text-align: left;
-        font-family: 'Cambria console', Consolas, monospace;
-        font-size: 40px;
+        font-size: 50px;
     }
-    .boton{
+    .button{
         height: 50px;
         max-width: 40%;
         margin: 10px auto;
         padding: 0px 20px;
         display: block;
         background: rgba(0,0,0,0.5);
+        border: 1px solid #c1c1c1;
         border-radius: 25px;
         text-align: center;
         font-size: 24px;
         font-weight: 700;
         line-height: 50px;
     }
-    .pie{
+    .footer{
         max-width: 100%;
-        padding: 20px 10px 60px 10px;
+        padding: 60px 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -346,57 +324,37 @@
         color: #fff;
         font-weight: 700;
     }
-    .cuadricula{
+    .grid{
         width: 100%;
-        margin: 40px 0px;
+        margin: 0px 0px 40px 0px;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 40px;
         grid-template-columns: 1fr 1fr;
         text-align: center;
         font-size: 24px;
     }
-    .c-titulo{
+    .grid-title{
         grid-column: span 2;
-        font-size: 36px;
+        font-size: 38px;
         font-family: 'Cambria console', Consolas, monospace;
     }
-    .item-lista{
+    .grid-square{
         margin: auto;
         display: flex;
         align-items: center;
     }
-    .item-lista i{
-        width: 30px;
-        height: 30px;
-    }
-    .item-lista p{
-        line-height: 30px;
-        font-size: 24px;
-        font-weight: 400;
-    }
-    .ref{
-        color: #fff;
-        text-decoration: none;        
-    }
-    p, .leible{
-        padding: 0px 10px 10px 10px;
-        font-size: 18px;
-        line-height: 26px;
-    }
-    .boton:active{
-        scale: 0.8;
-        background: #000;
+    .grid-text{
+        font-size: 20px;
     }
     @media (hover: hover){
         .ref:hover{
             scale: 1.1;
         }
-        .navegacion a:hover{
-            color: red;
-            background: red;
-            /*background: rgba(255,255,255,0.5);*/
+        .bar-button:hover{
+            scale: 1;
+            background: #000;
         }
-        .boton:hover{
+        .button:hover{
             background: rgba(0,0,0,0.75);
         }
     }
