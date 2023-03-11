@@ -5,7 +5,18 @@
     font-family: Inter, arial, sans-serif;
 }
 @media screen and (max-width: 480px) {
-    h1{
+    .item-lista i{
+        width: 30px;
+        height: 30px;
+    }
+    .item-lista p{
+        font-weight: 400;
+    }
+    .leible{
+        padding: 0px 10px 10px 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }h1{
         padding: 100px 10px 20px 10px;
         color: #3cf73c;
         font-family: Consolas, 'Courier New', monospace;
@@ -78,6 +89,7 @@
         padding: 0px 10px 10px 10px;
         font-size: 12px;
     }
+
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     h1{
