@@ -4,6 +4,9 @@
     color: #fff;
     font-family: Inter, arial, sans-serif;
 }
+.bg-none{
+    background: none;
+}
 @media screen and (max-width: 480px) {
     .title-green{
         padding: 100px 5px 20px 5px;
@@ -41,7 +44,7 @@
     .table-edu{
         width: calc(100% - 10px);
         margin: 0px auto;
-        border-collapse: collapse;
+        border: 1px solid #c0c0c0;
     }
     .col-1{
         padding: 5px;
@@ -55,11 +58,9 @@
     }
     .table-edu-list{
         padding: 0px 0px 0px 5px;
-        background: none;
     }
     .table-edu-list-item{
         padding: 5px 0px;
-        background: none;
         line-height: 20px;
     }
     .table-edu-row:nth-child(odd){
@@ -101,56 +102,66 @@
         padding: 100px 10px 20px 10px;
         color: #3cf73c;
         font-family: Consolas, 'Courier New', monospace;
-        font-size: 34px;
+        font-size: 40px;
     }
-    h2, h3{
-        padding: 10px;
-    }
-    .rectangulos{
-        width: 75%;
-        margin: 60px 20px 0px auto;
+    .list-r{
+        width: 80%;
+        margin: 90px 20px 0px auto;
         padding: 0px;
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
     }
-    .rectangulos li{
+    .list-r-item{
         margin: 5px;
         padding: 10px;
         list-style: none;
-        border: 1px solid #C8C8C8;
-        border-radius: 10px;
-        color: #C8C8C8;
+        border: 1px solid #E1E1E1;
+        border-radius: 10px;        
+        color: #E1E1E1;
         font-size: 20px;
+        font-family: Consolas, 'Courier New', monospace;
     }
-    .t-educacion{
-        border-collapse: collapse;
+    .readable{
+        padding: 0px 10px 10px 10px;
+        font-size: 16px;
+        line-height: 24px;
     }
-    .c1{
-        width: 20%;
+    img{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .table-edu{
+        width: calc(100% - 20px);
+        margin: auto;
+        border: 1px solid #c0c0c0;
+    }
+    .col-1{
+        width: 25%;
+        padding: 10px;
         background: none;
         text-align: right;
         font-size: 20px;
         font-weight: 700;
     }
-    .c2 ul{
-        background: none;
-        padding-left: 20px;
-    }
-    .c2 ul li{
+    .col-2{
+        padding: 5px;
         background: none;
     }
-    .t-educacion tr:nth-child(odd){
+    .table-edu-list{
+        padding: 0px 0px 0px 20px;
+    }
+    .table-edu-list-item{
+        padding: 5px 0px;
+    }
+    .table-edu-row:nth-child(odd){
         background: #212121;
     }
+    /*
     .lista{
         max-width: 90%;
         margin: auto;
         padding-left: 20px;
-    }
-    img{
-        width: 100%;
-        margin: 10px 0px;
     }
     video{
         width: 75%;
@@ -165,61 +176,70 @@
         padding: 0px 10px 10px 10px;
         color: #c8c8c8;
         font-size: 16px;
-    }
+    }*/
 }
 @media screen and (min-width: 769px){
-    h1{
-        padding: 100px 10px 20px 10px;
+    .title-green{
+        padding: 100px 20px 20px 20px;
         color: #3cf73c;
         font-family: 'Cambria console', Consolas, monospace;
-        font-size: 44px;
+        font-size: 50px;
     }
-    h2, h3{
-        padding: 10px;
-    }
-    .rectangulos{
-        width: 75%;
-        margin: 60px 20px 0px auto;
+    .list-r{
+        width: 70%;
+        margin: 90px 20px 0px auto;
         padding: 0px;
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
     }
-    .rectangulos li{
+    .list-r-item{
         margin: 5px;
         padding: 10px;
         list-style: none;
-        border: 1px solid #C8C8C8;
-        border-radius: 10px;
-        color: #C8C8C8;
+        border: 1px solid #E1E1E1;
+        border-radius: 10px;        
+        color: #E1E1E1;
         font-size: 20px;
+        font-family: Consolas, 'Courier New', monospace;
     }
-    .t-educacion{
-        width: 60%;
+    .readable{
+        padding: 0px 20px 20px 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    img{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .table-edu{
+        width: 80%;
         margin: auto;
-        border-collapse: collapse;
+        border: 1px solid #c0c0c0;
     }
-    .c1{
+    .col-1{
+        width: 25%;
+        padding: 10px;
         background: none;
         text-align: right;
         font-size: 24px;
         font-weight: 700;
     }
-    .c2{
-        padding: 20px 10px;
+    .col-2{
+        padding: 10px;
         background: none;
         font-size: 18px;
     }
-    .c2 ul{
-        background: none;
-        padding-left: 20px;
+    .table-edu-list{
+        padding: 0px 0px 0px 20px;
     }
-    .c2 ul li{
-        background: none;
+    .table-edu-list-item{
+        padding: 10px 0px;
     }
-    .t-educacion tr:nth-child(odd){
+    .table-edu-row:nth-child(odd){
         background: #212121;
     }
+    /*
     .lista{
         max-width: 75%;
         margin: auto;
@@ -247,9 +267,13 @@
         color: #c8c8c8;
         font-size: 16px;
     }
+    */
     @media (hover: hover){
-        .rectangulos li:hover{
-            border: 1px solid #fff;
+        .list-r-item:hover{
+            background: #c0c0c0;
+            border: 1px solid #c0c0c0;
+            color: #383838;
+            font-weight: 700;
         }
     }
 }

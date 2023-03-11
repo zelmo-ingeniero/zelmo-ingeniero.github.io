@@ -347,11 +347,10 @@
         font-size: 20px;
     }
     @media (hover: hover){
-        .ref:hover{
-            scale: 1.1;
+        .size-hover:hover{
+            scale: 1.2;
         }
         .bar-button:hover{
-            scale: 1;
             background: #000;
         }
         .button:hover{
