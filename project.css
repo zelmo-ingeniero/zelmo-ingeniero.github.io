@@ -9,9 +9,11 @@
 }
 @media screen and (max-width: 480px) {
     .title-green{
-        padding: 100px 5px 20px 5px;
+        padding: 100px 10px 20px 10px;
         color: #3cf73c;
         font-family: Consolas, 'Courier New', monospace;
+        font-size: 40px;
+        font-weight: 700;
         /*font-family: 'Cambria code', Consolas, monospace;*/
     }
     .list-r{
@@ -66,22 +68,24 @@
     .table-edu-row:nth-child(odd){
         background: #212121;
     }
-    /*
-    h2, h3{
-        padding: 20px 5px 10px 10px;
+    .subtitle1{
+        padding: 20px 10px 10px 10px;
+        font-size: 36px;
+        font-weight: 700;
     }
-    .item-lista i{
-        width: 30px;
-        height: 30px;
+    .subtitle2{
+        padding: 20px 10px 10px 10px;
+        font-size: 30px;
+        font-weight: 700;
     }
-    .item-lista p{
-        font-weight: 400;
-    }
-    .lista{
+    .list{
         max-width: 80%;
         margin: auto;
         padding-left: 20px;
     }
+    .list .readable{
+        padding: 0px 10px 5px 0px;
+    }/*
     video{
         width: 50%;
         margin: 10px calc(25%);
@@ -268,12 +272,13 @@
         font-size: 16px;
     }
     */
-    @media (hover: hover){
-        .list-r-item:hover{
-            background: #c0c0c0;
-            border: 1px solid #c0c0c0;
-            color: #383838;
-            font-weight: 700;
-        }
+    
+}
+@media (hover: hover){
+    .list-r-item:hover{
+        background: #c0c0c0;
+        border: 1px solid #c0c0c0;
+        color: #383838;
+        font-weight: 700;
     }
 }

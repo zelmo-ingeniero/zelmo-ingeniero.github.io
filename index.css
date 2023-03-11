@@ -346,16 +346,15 @@
     .grid-text{
         font-size: 20px;
     }
-    @media (hover: hover){
-        .size-hover:hover{
-            scale: 1.2;
-        }
-        .bar-button:hover{
-            background: #000;
-        }
-        .button:hover{
-            background: rgba(0,0,0,0.75);
-        }
+}
+@media (hover: hover){
+    .size-hover:hover{
+        scale: 1.2;
     }
-    
+    .bar-button:hover{
+        background: #000;
+    }
+    .button:hover{
+        background: rgba(0,0,0,0.75);
+    }
 }
