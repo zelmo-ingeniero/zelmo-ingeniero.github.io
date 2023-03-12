@@ -10,6 +10,9 @@
 .list-undecorated{
     list-style: none;
 }
+.w49{
+    width: 49%;
+}
 @media screen and (max-width: 480px) {
     .title-green{
         padding: 100px 10px 20px 10px;
@@ -41,6 +44,10 @@
         padding: 0px 10px 10px 10px;
         font-size: 16px;
         line-height: 24px;
+    }
+    .img-small{
+        width: 95%;
+        margin: 5px calc(2.5%);
     }
     .table-edu{
         width: calc(100% - 10px);
@@ -89,6 +96,10 @@
         width: 75%;
         margin: 10px calc(12.5%);
     }
+    .video-horizontal{
+        width: 100%;
+        margin: 0px;
+    }
     .disclaimer{
         padding: 10px;
         background: #000000;
@@ -97,13 +108,16 @@
         font-size: 14px;
         font-weight: 700;
     }
-    /*
-    .i-4{
+    .figure{
+        max-width: 90%;
+        margin: 5px calc(5%);
+        display: block;
+    }
+    .figure-img{
         width: 49%;
         margin: 0px;
         padding: 0px;
     }
-    */
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .title-green{
@@ -135,6 +149,10 @@
         padding: 0px 10px 10px 10px;
         font-size: 18px;
         line-height: 28px;
+    }
+    .img-small{
+        width: 65%;
+        margin: 10px calc(17.5%);
     }
     .table-edu{
         width: calc(100% - 20px);
@@ -192,6 +210,16 @@
         font-size: 14px;
         font-weight: 700;
     }
+    .figure{
+        max-width: 75%;
+        margin: 10px calc(12.5%);
+        display: block;
+    }
+    .figure-img{
+        width: 49%;
+        margin: 0px;
+        padding: 0px;
+    }
 }
 @media screen and (min-width: 769px){
     .title-green{
@@ -223,6 +251,10 @@
         padding: 0px 40px 20px 40px;
         font-size: 24px;
         line-height: 34px;
+    }
+    .img-small{
+        width: 40%;
+        margin: 20px calc(30%);
     }
     .table-edu{
         width: 80%;
@@ -280,6 +312,16 @@
         line-height: 24px;
         font-size: 18px;
         font-weight: 700;
+    }
+    .figure{
+        max-width: 75%;
+        margin: 10px calc(12.5%);
+        display: block;
+    }
+    .figure-img{
+        width: 24%;
+        margin: 0px;
+        padding: 0px;
     }
 }
 @media (hover: hover){
