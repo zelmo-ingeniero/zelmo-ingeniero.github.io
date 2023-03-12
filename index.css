@@ -87,7 +87,6 @@
         text-align: left;
     }
     .button{
-        height: 50px;
         max-width: 75%;
         margin: 10px auto;
         padding: 0px 20px;
@@ -196,8 +195,7 @@
         font-size: 34px;
     }
     .button{
-        height: 50px;
-        max-width: 60%;
+        max-width: 50%;
         margin: 10px auto;
         padding: 0px 20px;
         display: block;
@@ -304,7 +302,6 @@
         font-size: 50px;
     }
     .button{
-        height: 50px;
         max-width: 40%;
         margin: 10px auto;
         padding: 0px 20px;
