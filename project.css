@@ -7,6 +7,9 @@
 .bg-none{
     background: none;
 }
+.list-undecorated{
+    list-style: none;
+}
 @media screen and (max-width: 480px) {
     .title-green{
         padding: 100px 10px 20px 10px;
@@ -182,7 +185,7 @@
         margin: 10px calc(25%);
     }
     .disclaimer{
-        padding: 10px;
+        padding: 20px;
         background: #000000;
         color: #c0c0c0;
         line-height: 20px;
@@ -192,10 +195,11 @@
 }
 @media screen and (min-width: 769px){
     .title-green{
-        padding: 100px 20px 20px 20px;
+        padding: 120px 40px 20px 40px;
         color: #3cf73c;
-        font-family: 'Cambria console', Consolas, monospace;
+        font-family: Consolas, 'Courier New', monospace;
         font-size: 50px;
+        font-weight: 700;
     }
     .list-r{
         width: 70%;
@@ -216,13 +220,9 @@
         font-family: Consolas, 'Courier New', monospace;
     }
     .readable{
-        padding: 0px 20px 20px 20px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    img{
-        width: 100%;
-        margin: 10px 0px;
+        padding: 0px 40px 20px 40px;
+        font-size: 24px;
+        line-height: 34px;
     }
     .table-edu{
         width: 80%;
@@ -251,36 +251,36 @@
     .table-edu-row:nth-child(odd){
         background: #212121;
     }
-    /*
-    .lista{
-        max-width: 75%;
+    .subtitle1{
+        padding: 80px 40px 20px 40px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .subtitle2{
+        padding: 20px 40px;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .list{
+        max-width: 70%;
         margin: auto;
         padding-left: 20px;
     }
-    img{
-        width: 100%;
-        margin: 10px 0px;
+    .list .readable{
+        padding: 0px 10px 20px 0px;
     }
-    .esquemas{
-        width: 50%;
-        margin: 10px auto;
+    .video-vertical{
+        width: 30%;
+        margin: 20px calc(35%);
     }
-    video{
-        width: 50%;
-        margin: 0px 25%;
+    .disclaimer{
+        padding: 40px;
+        background: #000000;
+        color: #c0c0c0;
+        line-height: 24px;
+        font-size: 18px;
+        font-weight: 700;
     }
-    .i-4{
-        width: 49%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .t-chico{
-        padding: 0px 10px 10px 10px;
-        color: #c8c8c8;
-        font-size: 16px;
-    }
-    */
-    
 }
 @media (hover: hover){
     .list-r-item:hover{
