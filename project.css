@@ -53,8 +53,10 @@
         width: calc(100% - 10px);
         margin: 0px auto;
         border: 1px solid #c0c0c0;
+        border-collapse: collapse;
     }
     .col-1{
+        width: fit-content;
         padding: 5px;
         background: none;
         text-align: right;
@@ -62,14 +64,10 @@
         font-weight: 700;
     }
     .col-2{
+        padding: 20px 0px;
         background: none;
-    }
-    .table-edu-list{
-        padding: 0px 0px 0px 5px;
-    }
-    .table-edu-list-item{
-        padding: 5px 0px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 24px;
     }
     .table-edu-row:nth-child(odd){
         background: #212121;
@@ -155,27 +153,22 @@
         margin: 10px calc(17.5%);
     }
     .table-edu{
-        width: calc(100% - 20px);
+        width: 87%;
         margin: auto;
         border: 1px solid #c0c0c0;
     }
     .col-1{
-        width: 25%;
         padding: 10px;
         background: none;
         text-align: right;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 700;
     }
     .col-2{
-        padding: 5px;
+        padding: 20px 10px;
         background: none;
-    }
-    .table-edu-list{
-        padding: 0px 0px 0px 20px;
-    }
-    .table-edu-list-item{
-        padding: 5px 0px;
+        font-size: 18px;
+        line-height: 28px;
     }
     .table-edu-row:nth-child(odd){
         background: #212121;
@@ -257,12 +250,11 @@
         margin: 20px calc(27.5%);
     }
     .table-edu{
-        width: 80%;
+        width: 75%;
         margin: auto;
         border: 1px solid #c0c0c0;
     }
     .col-1{
-        width: 25%;
         padding: 10px;
         background: none;
         text-align: right;
@@ -270,15 +262,10 @@
         font-weight: 700;
     }
     .col-2{
-        padding: 10px;
+        padding: 40px 0px;
         background: none;
-        font-size: 18px;
-    }
-    .table-edu-list{
-        padding: 0px 0px 0px 20px;
-    }
-    .table-edu-list-item{
-        padding: 10px 0px;
+        font-size: 20px;
+        line-height: 30px;
     }
     .table-edu-row:nth-child(odd){
         background: #212121;
