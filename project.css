@@ -12,7 +12,7 @@
         padding: 100px 10px 20px 10px;
         color: #3cf73c;
         font-family: Consolas, 'Courier New', monospace;
-        font-size: 40px;
+        font-size: 44px;
         font-weight: 700;
         /*font-family: 'Cambria code', Consolas, monospace;*/
     }
@@ -38,10 +38,6 @@
         padding: 0px 10px 10px 10px;
         font-size: 16px;
         line-height: 24px;
-    }
-    img{
-        width: 100%;
-        margin: 5px 0px;
     }
     .table-edu{
         width: calc(100% - 10px);
@@ -85,19 +81,24 @@
     }
     .list .readable{
         padding: 0px 10px 5px 0px;
-    }/*
-    video{
-        width: 50%;
-        margin: 10px calc(25%);
     }
+    .video-vertical{
+        width: 75%;
+        margin: 10px calc(12.5%);
+    }
+    .disclaimer{
+        padding: 10px;
+        background: #000000;
+        color: #c0c0c0;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    /*
     .i-4{
         width: 49%;
         margin: 0px;
         padding: 0px;
-    }
-    .t-chico{
-        padding: 0px 10px 10px 10px;
-        font-size: 12px;
     }
     */
 }
