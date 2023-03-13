@@ -4,15 +4,15 @@
     /*
     Consolas
     Cascadia code
-    #titulos 3cf73c
+    #titles 3cf73c
     #primary 286428
     #primary clear 515851
-    #azul 9EFFFF
-    #rojo FF9696
+    #blue 9EFFFF
+    #red FF9696
     #212121
     #383838
     #787878
-    #C8C8C8
+    #C0C0C0
     */
 }
 .m-5{
@@ -93,16 +93,12 @@
         padding: 0px 20px;
         display: block;
         background: rgba(0,0,0,0.5);
-        border: 1px solid #C8C8C8;
+        border: 1px solid #C0C0C0;
         border-radius: 25px;
         text-align: center;
         font-size: 18px;
         font-weight: 700;
         line-height: 50px;
-    }
-    .button:active{
-        scale: 0.8;
-        background: #000;
     }
     .footer{
         max-width: 100%;
@@ -360,4 +356,8 @@
     .button:hover{
         background: rgba(0,0,0,0.75);
     }
+}
+.button:active{
+    scale: 0.9;
+    background: #000;
 }

@@ -52,7 +52,7 @@
     .table-edu{
         width: calc(100% - 10px);
         margin: 0px auto;
-        border: 1px solid #c0c0c0;
+        border: 1px solid #C0C0C0;
         border-collapse: collapse;
     }
     .col-1{
@@ -101,7 +101,7 @@
     .disclaimer{
         padding: 10px;
         background: #000000;
-        color: #c0c0c0;
+        color: #C0C0C0;
         line-height: 20px;
         font-size: 14px;
         font-weight: 700;
@@ -155,7 +155,7 @@
     .table-edu{
         width: 87%;
         margin: auto;
-        border: 1px solid #c0c0c0;
+        border: 1px solid #C0C0C0;
     }
     .col-1{
         padding: 10px;
@@ -198,7 +198,7 @@
     .disclaimer{
         padding: 20px;
         background: #000000;
-        color: #c0c0c0;
+        color: #C0C0C0;
         line-height: 20px;
         font-size: 14px;
         font-weight: 700;
@@ -252,7 +252,7 @@
     .table-edu{
         width: 75%;
         margin: auto;
-        border: 1px solid #c0c0c0;
+        border: 1px solid #C0C0C0;
     }
     .col-1{
         padding: 10px;
@@ -295,7 +295,7 @@
     .disclaimer{
         padding: 40px;
         background: #000000;
-        color: #c0c0c0;
+        color: #C0C0C0;
         line-height: 24px;
         font-size: 18px;
         font-weight: 700;
@@ -313,8 +313,8 @@
 }
 @media (hover: hover){
     .list-r-item:hover{
-        background: #c0c0c0;
-        border: 1px solid #c0c0c0;
+        background: #C0C0C0;
+        border: 1px solid #C0C0C0;
         color: #383838;
         font-weight: 700;
     }
