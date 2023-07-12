@@ -1,31 +1,39 @@
-*{
-    margin: 0px;
-    font-family: Inter, arial,  "sans-serif";
-    /*
+/*
+    FONTS:
     Consolas
     Cascadia code
-    #titles 3cf73c
-    #primary 286428
-    #primary clear 515851
-    #blue 9EFFFF
-    #red FF9696
+    COLORS:
+    titles #3cf73c
+    primary #286428
+    primary clear #515851
+    blue #9EFFFF
+    red #FF9696
     #212121
     #383838
     #787878
     #C0C0C0
-    */
-}
-.m-5{
-    margin: 5px;
+*/
+*{
+    margin: 0px;
+    font-family: Inter, arial,  "sans-serif";    
 }
 .ref{
     color: #fff;
     text-decoration: none;
 }
-.w100{
+.w-100{
     width: 100%;
 }
+.w-80{
+    width: 80%;
+}
+.m-auto{
+    margin: auto;
+}
 @media screen and (max-width: 480px){
+    .body{
+        font-size: 12px;
+    }
     .bar{
         width: 100%;
         position: fixed;
@@ -33,44 +41,38 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: rgba(0,0,0,0.5);
-        color:white; 
+        background: rgba(0, 0, 0, 0.5);
+        color:#fff;
     }
     .bar-button{
-        padding: 10px 20px;
+        padding: 1em 1.5em;
         background: none;
-        font-size: 16px;
+        font-size: 1.2em;
         font-weight: 700;
     }
     .head{
-        padding: 70px 5px 20px 5px;
-        background: linear-gradient(to bottom right, #286428, #515851);
+        padding: 6em 0.5em 2em 0.5em;
+        background: linear-gradient(to bottom right, #000, #515851);
         text-align: center;
         color: #fff;
     }
     .big-title{
-        font-size: 40px;
+        font-size: 3rem;
     }
     .medium-title{
-        padding: 20px 5px;
+        padding: 1em 0.5em;
         font-family: 'Cambria console', Consolas, monospace;
-        font-size: 32px;
-    }
-    .head-text{
-        width: 80%;
-        margin: auto;
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 1.5em;
     }
     .social-links{
-        margin: 80px 0px 30px 0px;
+        margin-top: 5em;
     }
     .social-links .ref{
         display: inline-block;
-        margin: 5px;
+        margin: 0.2em;
         color: #fff;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 2em;
+        line-height: 2em;
     }
     .project{
         padding: 10px;
@@ -130,6 +132,9 @@
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
+    .body{
+        font-size: 14px;
+    }
     .bar{
         width: 100%;
         position: fixed;
@@ -137,44 +142,38 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: rgba(0,0,0,0.5);
-        color:white; 
+        background: rgba(0, 0, 0, 0.5);
+        color:#fff;
     }
     .bar-button{
-        padding: 20px;
+        padding: 1em 1.5em;
         background: none;
-        font-size: 18px;
+        font-size: 1.2em;
         font-weight: 700;
     }
     .head{
-        padding: 90px 0px 20px 0px;
-        background: linear-gradient(to bottom right, #286428, #515851);
+        padding: 6em 0.5em 2em 0.5em;
+        background: linear-gradient(to bottom right, #000, #515851);
         text-align: center;
         color: #fff;
     }
     .big-title{
-        font-size: 70px;
+        font-size: 3rem;
     }
     .medium-title{
-        padding: 40px 10px;
+        padding: 1em 0.5em;
         font-family: 'Cambria console', Consolas, monospace;
-        font-size: 36px;
-    }
-    .head-text{
-        width: 60%;
-        margin: auto;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 1.5em;
     }
     .social-links{
-        margin: 80px 0px 40px 0px;
+        margin-top: 5em;
     }
     .social-links .ref{
         display: inline-block;
-        margin: 10px;
+        margin: 0.2em;
         color: #fff;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 2em;
+        line-height: 2em;
     }
     .project{
         padding: 10px;
@@ -238,6 +237,9 @@
     }
 }
 @media screen and (min-width: 769px){
+    .body{
+        font-size: 16px;
+    }
     .bar{
         width: 100%;
         position: fixed;
@@ -245,44 +247,38 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: rgba(0,0,0,0.5);
-        color:white; 
+        background: rgba(0, 0, 0, 0.5);
+        color:#fff;
     }
     .bar-button{
-        padding: 20px;
+        padding: 1em 1.5em;
         background: none;
-        font-size: 18px;
+        font-size: 1.2em;
         font-weight: 700;
     }
     .head{
-        padding: 90px 0px 20px 0px;
-        background: linear-gradient(to bottom right, #286428, #515851);
+        padding: 6em 0.5em 2em 0.5em;
+        background: linear-gradient(to bottom right, #000, #515851);
         text-align: center;
         color: #fff;
     }
     .big-title{
-        font-size: 80px;
+        font-size: 3rem;
     }
     .medium-title{
-        padding: 40px;
+        padding: 1em 0.5em;
         font-family: 'Cambria console', Consolas, monospace;
-        font-size: 50px;
-    }
-    .head-text{
-        width: 60%;
-        margin: auto;
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 1.5em;
     }
     .social-links{
-        margin: 100px 0px 40px 0px;
+        margin-top: 5em;
     }
     .social-links .ref{
         display: inline-block;
-        margin: 10px;
+        margin: 0.2em;
         color: #fff;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 2em;
+        line-height: 2em;
     }
     .project{
         padding: 10px;
