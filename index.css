@@ -6,6 +6,8 @@
     titles #3cf73c
     primary #286428
     primary clear #515851
+    medium 004400
+    dark green #001100
     blue #9EFFFF
     red #FF9696
     #212121
@@ -22,6 +24,7 @@
     text-decoration: none;
 }
 .w-100{
+    max-width: 100%;
     width: 100%;
 }
 .w-80{
@@ -61,6 +64,33 @@
     align-items: center;
     justify-content: center;
 }
+.button:active{
+    scale: 0.9;
+    background: #000;
+}
+@media (hover: hover){
+    .size-hover:hover{
+        scale: 1.2;
+    }
+    .bar-button:hover{
+        background: #000;
+    }
+    .button:hover{
+        background: #515851;
+    }
+}
+@keyframes head-background {
+    0%{
+        background-position: 0% 100%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
+
 @media screen and (max-width: 480px){
     .body{
         font-size: 12px;
@@ -73,16 +103,18 @@
     }
     .head{
         padding: 6em 0.5em 2em 0.5em;
-        background: linear-gradient(to bottom right, #000, #515851);
+        background: linear-gradient(100deg, #515851, #286428, #004400, #286428);
+        background-size: 200%;
         text-align: center;
         color: #fff;
+        animation: head-background 10s ease-in-out infinite;
     }
     .big-title{
         font-size: 3rem;
     }
     .medium-title{
         padding: 1em 0.5em;
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     .social-links{
         margin-top: 5em;
@@ -95,18 +127,15 @@
         line-height: 2em;
     }
     .project{
-        padding: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        background: linear-gradient(#787878, #e0e0e0);
+        background: linear-gradient(#000, #515851);
         color: #fff;
     }
     .project-name{
         width: 100%;
-        padding: 20px 0px 40px 0px;
-        text-align: left;
     }
     .button{
         width: fit-content;
@@ -175,21 +204,6 @@
         color: #fff;
         font-size: 2em;
         line-height: 2em;
-    }
-    .project{
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        background: linear-gradient(to bottom right, #787878, #e0e0e0);
-        color: #fff;
-    }
-    .project-name{
-        width: 100%;
-        padding: 20px 0px 60px 0px;
-        text-align: left;
-        font-size: 34px;
     }
     .button{
         width: fit-content;
@@ -261,21 +275,6 @@
         font-size: 2em;
         line-height: 2em;
     }
-    .project{
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        background: linear-gradient(to bottom right, #787878, #e0e0e0);
-        color: #fff;
-    }
-    .project-name{
-        width: 100%;
-        padding: 20px 0px 60px 0px;
-        text-align: left;
-        font-size: 50px;
-    }
     .button{
         width: fit-content;
         max-width: 40%;
@@ -313,19 +312,4 @@
         margin: 0.5em 0em;
         font-size: 2em;
     }
-}
-@media (hover: hover){
-    .size-hover:hover{
-        scale: 1.2;
-    }
-    .bar-button:hover{
-        background: #000;
-    }
-    .button:hover{
-        background: #515851;
-    }
-}
-.button:active{
-    scale: 0.9;
-    background: #000;
 }
