@@ -1,6 +1,5 @@
 *{
     margin: 0px;
-    background: #383838;
     color: #fff;
     font-family: Inter, arial, sans-serif;
 }
@@ -14,6 +13,9 @@
     width: 49%;
 }
 @media screen and (max-width: 480px) {
+    .body{
+        font-size: 12px;
+    }
     .title-green{
         padding: 100px 10px 20px 10px;
         color: #3cf73c;
