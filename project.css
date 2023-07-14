@@ -131,7 +131,7 @@
         font-size: 14px;
     }
     .title-green{
-        margin: 8rem 0.5rem 2rem 0.5rem;
+        margin: 8rem 1rem 2rem 1rem;
         color: #3cf73c;
         font-family: Roboto mono, Monaco, Consolas, monospace;
         font-size: 3rem;
@@ -153,7 +153,7 @@
         font-size: 1rem;
     }
     .paragraph{
-        margin: 0em 1em 0.5em 1em;
+        margin: 0em 1.5em 0.5em 1.5em;
     }
     .img-small{
         width: 40%;
