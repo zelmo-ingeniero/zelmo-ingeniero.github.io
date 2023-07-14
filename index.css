@@ -90,7 +90,7 @@
 }
 @media (hover: hover){
     .size-hover:hover{
-        scale: 1.15;
+        scale: 1.05;
     }
     .bar-button:hover{
         background: #fff;
@@ -101,7 +101,7 @@
         color: #286428;
     }
     .button:hover{
-        background: #515851;
+        background: #3cf73c;
     }
 }
 @keyframes head-background {

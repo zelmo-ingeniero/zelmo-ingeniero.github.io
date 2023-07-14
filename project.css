@@ -40,6 +40,14 @@
     max-width: 49%;
     width: 49%;
 }
+.disclaimer{
+    padding: 1em;
+    background: #001100;
+    color: #C0C0C0;
+    line-height: 1.5em;
+    font-size: 0.9em;
+    font-weight: 400;
+}
 @media screen and (max-width: 480px) {
     .body{
         font-size: 12px;
@@ -93,25 +101,18 @@
     }
     .img-big{
         max-width: 100%;
-        width: 90%;
-        margin: 0.5em auto;
+        width: 95%;
+        margin: 0.5em calc(2.5%);
     }
     .video-vertical{
-        width: 75%;
-        margin: 10px calc(12.5%);
+        width: 50%;
+        margin: 0em calc(25%);
     }
     .video-horizontal{
         width: 100%;
         margin: 0px;
     }
-    .disclaimer{
-        padding: 10px;
-        background: #000000;
-        color: #C0C0C0;
-        line-height: 20px;
-        font-size: 14px;
-        font-weight: 700;
-    }
+    
     .figure{
         max-width: 90%;
         margin: 5px calc(5%);
@@ -157,34 +158,30 @@
         margin: 1em calc(30%);
     }
     .subtitle1{
-        padding: 60px 10px 20px 10px;
-        font-size: 36px;
+        padding: 4rem 1rem 2rem 1rem;
+        font-size: 2.5em;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .subtitle2{
-        padding: 20px 10px;
-        font-size: 30px;
+        padding: 2rem;
+        font-size: 2em;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .list{
         max-width: 80%;
         margin: auto;
-        padding-left: 20px;
+        padding-left: 2em;
     }
-    .list .readable{
-        padding: 0px 10px 10px 0px;
+    .img-big{
+        max-width: 100%;
+        width: 95%;
+        margin: 0.5em calc(2.5%);
     }
     .video-vertical{
-        width: 50%;
-        margin: 10px calc(25%);
-    }
-    .disclaimer{
-        padding: 20px;
-        background: #000000;
-        color: #C0C0C0;
-        line-height: 20px;
-        font-size: 14px;
-        font-weight: 700;
+        width: 40%;
+        margin: 0em calc(30%);
     }
     .figure{
         max-width: 75%;
@@ -202,13 +199,14 @@
         font-size: 16px;
     }
     .title-green{
-        margin: 10rem 4rem 2rem 4rem;
+        margin: 10rem 1rem 2rem 1rem;
         color: #3cf73c;
         font-family: Roboto mono, Monaco, Consolas, monospace;
         font-size: 4rem;
         font-weight: 700;
     }
     .list-r{
+        max-width: 70%;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
@@ -224,12 +222,13 @@
         font-size: 1rem;
     }
     .paragraph{
-        margin: 0em 1em 0.5em 1em;
+        max-width: 80%;
+        margin: 0em auto 0.5em auto;
         text-align: left;
     }
     .img-small{
-        width: 25%;
-        margin: 1em calc(37.5%);
+        width: 40%;
+        margin: 1em calc(30%);
     }
     .subtitle1{
         padding: 80px 40px 20px 40px;
@@ -246,20 +245,14 @@
         margin: auto;
         padding-left: 20px;
     }
-    .list .readable{
-        padding: 0px 10px 20px 0px;
+    .img-big{
+        max-width: 100%;
+        width: 80%;
+        margin: 0.5em calc(10%);
     }
     .video-vertical{
-        width: 30%;
-        margin: 20px calc(35%);
-    }
-    .disclaimer{
-        padding: 40px;
-        background: #000000;
-        color: #C0C0C0;
-        line-height: 24px;
-        font-size: 18px;
-        font-weight: 700;
+        width: 25%;
+        margin: 1em calc(37.5%);
     }
     .figure{
         max-width: 75%;
