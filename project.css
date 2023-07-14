@@ -9,9 +9,6 @@
 .bg-gray{
     background: #383838;
 }
-.list-undecorated{
-    list-style: none;
-}
 .m-5{
     margin: 5px;
 }
@@ -36,10 +33,6 @@
     margin: 2em auto;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.w-49{
-    max-width: 49%;
-    width: 49%;
-}
 .disclaimer{
     padding: 1em;
     background: #001100;
@@ -47,6 +40,13 @@
     line-height: 1.5em;
     font-size: 0.9em;
     font-weight: 400;
+}
+@media (hover: hover){
+    .list-r-item:hover{
+        background: #fff;
+        color: #383838;
+        font-weight: 700;
+    }
 }
 @media screen and (max-width: 480px) {
     .body{
@@ -90,7 +90,7 @@
     }
     .subtitle2{
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 2em;
         font-weight: 700;
         font-family: Roboto mono, Monaco, Consolas, monospace;
     }
@@ -112,10 +112,9 @@
         width: 100%;
         margin: 0px;
     }
-    
     .figure{
-        max-width: 90%;
-        margin: 5px calc(5%);
+        max-width: 80%;
+        margin: 0.5em calc(10%);
         display: block;
     }
     .figure-img{
@@ -183,9 +182,13 @@
         width: 40%;
         margin: 0em calc(30%);
     }
+    .video-horizontal{
+        width: 66%;
+        margin: 0em calc(17.5%);
+    }
     .figure{
-        max-width: 75%;
-        margin: 10px calc(12.5%);
+        max-width: 60%;
+        margin: 0.5em calc(20%);
         display: block;
     }
     .figure-img{
@@ -231,14 +234,16 @@
         margin: 1em calc(30%);
     }
     .subtitle1{
-        padding: 80px 40px 20px 40px;
-        font-size: 40px;
+        padding: 2rem 1rem;
+        font-size: 3em;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .subtitle2{
-        padding: 20px 40px;
-        font-size: 36px;
+        padding: 2rem;
+        font-size: 2rem;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .list{
         max-width: 70%;
@@ -254,22 +259,18 @@
         width: 25%;
         margin: 1em calc(37.5%);
     }
+    .video-horizontal{
+        width: 45%;
+        margin: 0em calc(27.5%);
+    }
     .figure{
-        max-width: 75%;
-        margin: 10px calc(12.5%);
+        max-width: 70%;
+        margin: 0.5em calc(15%);
         display: block;
     }
     .figure-img{
         width: 24%;
         margin: 0px;
         padding: 0px;
-    }
-}
-@media (hover: hover){
-    .list-r-item:hover{
-        background: #C0C0C0;
-        border: 1px solid #C0C0C0;
-        color: #383838;
-        font-weight: 700;
     }
 }
