@@ -91,7 +91,7 @@
 .project{
     max-width: 100%;
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     position: relative;
 }
 .project-text-container{
@@ -200,7 +200,7 @@
     }
     .footer{
         max-width: 100%;
-        padding: 1em 2em;
+        padding: 2.5em 1em;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
