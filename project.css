@@ -1,114 +1,123 @@
 *{
     margin: 0px;
-    background: #383838;
     color: #fff;
     font-family: Inter, arial, sans-serif;
 }
 .bg-none{
     background: none;
 }
-.list-undecorated{
-    list-style: none;
+.bg-gray{
+    background: #383838;
 }
-.w49{
-    width: 49%;
+.m-5{
+    margin: 5px;
+}
+.py-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.w-29{
+    max-width: 29%;
+}
+.mt-derecho{
+    margin: 5rem 1.5rem 0rem auto;
+}
+.external-link{
+    color: #3cf73c;
+    font-size: 0.9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.border{
+    border: 1px solid #E1E1E1;
+}
+.divisor{
+    width: 90%;
+    margin: 2em auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.disclaimer{
+    padding: 1em;
+    background: #001100;
+    color: #C0C0C0;
+    line-height: 1.5em;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+@media (hover: hover){
+    .list-r-item:hover{
+        background: #fff;
+        color: #383838;
+        font-weight: 700;
+    }
 }
 @media screen and (max-width: 480px) {
+    .body{
+        font-size: 12px;
+    }
     .title-green{
-        padding: 100px 10px 20px 10px;
+        margin: 8rem 0.5rem 2rem 0.5rem;
         color: #3cf73c;
-        font-family: Consolas, 'Courier New', monospace;
-        font-size: 44px;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
+        font-size: 3rem;
         font-weight: 700;
-        /*font-family: 'Cambria code', Consolas, monospace;*/
     }
     .list-r{
-        width: 90%;
-        margin: 60px auto 0px auto;
-        padding: 0px;
+        max-width: 90%;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
     }
     .list-r-item{
-        margin: 5px;
-        padding: 5px 10px;
+        margin: 0.2em;
+        padding: 0.2em 0.8em;
         list-style: none;
         border: 1px solid #E1E1E1;
-        border-radius: 5px;        
+        border-radius: 0.5em;        
         color: #E1E1E1;
-        font-size: 16px;
-        font-family: Consolas, 'Courier New', monospace;
+        font-size: 1rem;
     }
-    .readable{
-        padding: 0px 10px 10px 10px;
-        font-size: 16px;
-        line-height: 24px;
+    .paragraph{
+        margin: 0em 0.5em 0.5em 0.5em;
     }
     .img-small{
-        width: 95%;
-        margin: 5px calc(2.5%);
-    }
-    .table-edu{
-        width: calc(100% - 10px);
-        margin: 0px auto;
-        border: 1px solid #C0C0C0;
-        border-collapse: collapse;
-    }
-    .col-1{
-        width: fit-content;
-        padding: 5px;
-        background: none;
-        text-align: right;
-        font-size: 18px;
-        font-weight: 700;
-    }
-    .col-2{
-        padding: 20px 0px;
-        background: none;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .table-edu-row:nth-child(odd){
-        background: #212121;
+        width: 60%;
+        margin: 5px calc(20%);
     }
     .subtitle1{
-        padding: 60px 10px 20px 10px;
-        font-size: 36px;
+        padding: 2rem 1rem 2rem 1rem;
+        font-size: 2.5em;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .subtitle2{
-        padding: 20px 10px;
-        font-size: 30px;
+        padding: 1rem;
+        font-size: 2em;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .list{
         max-width: 80%;
         margin: auto;
-        padding-left: 20px;
+        padding-left: 2em;
     }
-    .list .readable{
-        padding: 0px 10px 5px 0px;
+    .img-big{
+        max-width: 100%;
+        width: 95%;
+        margin: 0.5em calc(2.5%);
     }
     .video-vertical{
-        width: 75%;
-        margin: 10px calc(12.5%);
+        width: 50%;
+        margin: 0em calc(25%);
     }
     .video-horizontal{
         width: 100%;
         margin: 0px;
     }
-    .disclaimer{
-        padding: 10px;
-        background: #000000;
-        color: #C0C0C0;
-        line-height: 20px;
-        font-size: 14px;
-        font-weight: 700;
-    }
     .figure{
-        max-width: 90%;
-        margin: 5px calc(5%);
+        max-width: 80%;
+        margin: 0.5em calc(10%);
         display: block;
     }
     .figure-img{
@@ -118,94 +127,71 @@
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .body{
+        font-size: 14px;
+    }
     .title-green{
-        padding: 100px 10px 20px 10px;
+        margin: 8rem 1rem 2rem 1rem;
         color: #3cf73c;
-        font-family: Consolas, 'Courier New', monospace;
-        font-size: 44px;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
+        font-size: 3rem;
         font-weight: 700;
     }
     .list-r{
-        width: 80%;
-        margin: 90px 20px 0px auto;
-        padding: 0px;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
     }
     .list-r-item{
-        margin: 5px;
-        padding: 10px;
+        margin: 0.2em;
+        padding: 0.2em 0.8em;
         list-style: none;
         border: 1px solid #E1E1E1;
-        border-radius: 10px;        
+        border-radius: 0.5em;        
         color: #E1E1E1;
-        font-size: 20px;
-        font-family: Consolas, 'Courier New', monospace;
+        font-size: 1rem;
     }
-    .readable{
-        padding: 0px 10px 10px 10px;
-        font-size: 18px;
-        line-height: 28px;
+    .paragraph{
+        margin: 0em 1.5em 0.5em 1.5em;
     }
     .img-small{
-        width: 65%;
-        margin: 10px calc(17.5%);
-    }
-    .table-edu{
-        width: 87%;
-        margin: auto;
-        border: 1px solid #C0C0C0;
-    }
-    .col-1{
-        padding: 10px;
-        background: none;
-        text-align: right;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    .col-2{
-        padding: 20px 10px;
-        background: none;
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .table-edu-row:nth-child(odd){
-        background: #212121;
+        width: 40%;
+        margin: 1em calc(30%);
     }
     .subtitle1{
-        padding: 60px 10px 20px 10px;
-        font-size: 36px;
+        padding: 4rem 1rem 2rem 1rem;
+        font-size: 2.5em;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .subtitle2{
-        padding: 20px 10px;
-        font-size: 30px;
+        padding: 2rem;
+        font-size: 2em;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .list{
         max-width: 80%;
         margin: auto;
-        padding-left: 20px;
+        padding-left: 2em;
     }
-    .list .readable{
-        padding: 0px 10px 10px 0px;
+    .img-big{
+        max-width: 100%;
+        width: 95%;
+        margin: 0.5em calc(2.5%);
     }
     .video-vertical{
-        width: 50%;
-        margin: 10px calc(25%);
+        width: 40%;
+        margin: 0em calc(30%);
     }
-    .disclaimer{
-        padding: 20px;
-        background: #000000;
-        color: #C0C0C0;
-        line-height: 20px;
-        font-size: 14px;
-        font-weight: 700;
+    .video-horizontal{
+        width: 66%;
+        margin: 0em calc(17.5%);
     }
     .figure{
-        max-width: 75%;
-        margin: 10px calc(12.5%);
+        max-width: 60%;
+        margin: 0.5em calc(20%);
         display: block;
     }
     .figure-img{
@@ -215,107 +201,79 @@
     }
 }
 @media screen and (min-width: 769px){
+    .body{
+        font-size: 16px;
+    }
     .title-green{
-        padding: 120px 40px 20px 40px;
+        margin: 10rem 1rem 2rem 1rem;
         color: #3cf73c;
-        font-family: Consolas, 'Courier New', monospace;
-        font-size: 50px;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
+        font-size: 4rem;
         font-weight: 700;
     }
     .list-r{
-        width: 70%;
-        margin: 90px 20px 0px auto;
-        padding: 0px;
+        max-width: 70%;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
     }
     .list-r-item{
-        margin: 5px;
-        padding: 10px;
+        margin: 0.2em;
+        padding: 0.2em 0.8em;
         list-style: none;
         border: 1px solid #E1E1E1;
-        border-radius: 10px;        
+        border-radius: 0.5em;        
         color: #E1E1E1;
-        font-size: 20px;
-        font-family: Consolas, 'Courier New', monospace;
+        font-size: 1rem;
     }
-    .readable{
-        padding: 0px 40px 20px 40px;
-        font-size: 24px;
-        line-height: 34px;
+    .paragraph{
+        max-width: 80%;
+        margin: 0em auto 0.5em auto;
+        text-align: left;
     }
     .img-small{
-        width: 45%;
-        margin: 20px calc(27.5%);
-    }
-    .table-edu{
-        width: 75%;
-        margin: auto;
-        border: 1px solid #C0C0C0;
-    }
-    .col-1{
-        padding: 10px;
-        background: none;
-        text-align: right;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    .col-2{
-        padding: 40px 0px;
-        background: none;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .table-edu-row:nth-child(odd){
-        background: #212121;
+        width: 40%;
+        margin: 1em calc(30%);
     }
     .subtitle1{
-        padding: 80px 40px 20px 40px;
-        font-size: 40px;
+        padding: 2rem 1rem;
+        font-size: 3em;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .subtitle2{
-        padding: 20px 40px;
-        font-size: 36px;
+        padding: 2rem;
+        font-size: 2rem;
         font-weight: 700;
+        font-family: Roboto mono, Monaco, Consolas, monospace;
     }
     .list{
         max-width: 70%;
         margin: auto;
         padding-left: 20px;
     }
-    .list .readable{
-        padding: 0px 10px 20px 0px;
+    .img-big{
+        max-width: 100%;
+        width: 80%;
+        margin: 0.5em calc(10%);
     }
     .video-vertical{
-        width: 30%;
-        margin: 20px calc(35%);
+        width: 25%;
+        margin: 1em calc(37.5%);
     }
-    .disclaimer{
-        padding: 40px;
-        background: #000000;
-        color: #C0C0C0;
-        line-height: 24px;
-        font-size: 18px;
-        font-weight: 700;
+    .video-horizontal{
+        width: 45%;
+        margin: 0em calc(27.5%);
     }
     .figure{
-        max-width: 75%;
-        margin: 10px calc(12.5%);
+        max-width: 70%;
+        margin: 0.5em calc(15%);
         display: block;
     }
     .figure-img{
         width: 24%;
         margin: 0px;
         padding: 0px;
-    }
-}
-@media (hover: hover){
-    .list-r-item:hover{
-        background: #C0C0C0;
-        border: 1px solid #C0C0C0;
-        color: #383838;
-        font-weight: 700;
     }
 }
