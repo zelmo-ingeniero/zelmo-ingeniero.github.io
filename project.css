@@ -3,11 +3,8 @@
     color: #fff;
     font-family: Inter, arial, sans-serif;
 }
-.bg-none{
-    background: none;
-}
-.bg-gray{
-    background: #383838;
+.d-block{
+    display: block;    
 }
 .m-5{
     margin: 5px;
@@ -59,7 +56,7 @@
         margin: 8rem 0.5rem 2rem 0.5rem;
         color: #3cf73c;
         font-family: Roboto mono, Monaco, Consolas, monospace;
-        font-size: 3rem;
+        font-size: 2.2rem;
         font-weight: 700;
     }
     .list-r{
