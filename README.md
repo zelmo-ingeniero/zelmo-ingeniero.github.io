@@ -2,3 +2,4 @@
 
 - how to put spanish language
 - check out the repo renaming
+- remove old resume from footer
