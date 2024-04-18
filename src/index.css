@@ -2,19 +2,8 @@
     FONTS:
     Consolas
     Cascadia code
-    COLORS:
-    titles #3cf73c
-    primary #286428
-    primary clear #515851
-    medium 004400
-    dark green #001100
-    blue #9EFFFF
-    red #FF9696
-    #212121
-    #383838
-    #787878
-    #C0C0C0
 */
+
 * {
   margin: 0px;
   font-family: Inter, arial, "sans-serif";

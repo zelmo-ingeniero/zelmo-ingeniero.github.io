@@ -12,25 +12,15 @@
     <!-- <link rel="stylesheet" href="index.css"> -->
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="">
+  <body class="bg-black text-white">
     <a id="up"></a>
-    <nav class="">
-      <a href="#"></a>
-      <a href="about.html" class="" title="Go to see more about me">
-        About me
-      </a>
-    </nav>
-    <main class="">
-      <h1 class="">Sergio Jared</h1>
-      <h2 class="">Computational Systems Engineer</h2>
-      <p class="">
-        Inside the web i like that they call me as
-        <b>zelmo</b>, sometimes could find me with that name
-      </p>
-      <div class="social-links">
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 w-100 flex justify-end sm:justify-between bg-black opacity-75"
+    >
+      <div class="hidden sm:block p-1 px-2">
         <a
           href="https://www.linkedin.com/in/sergio-jared-valencia-cortaza-806551253/"
-          class=""
+          class="px-1"
           title="Go to my LinkedIn profile"
           target="_blank"
         >
@@ -38,7 +28,7 @@
         </a>
         <a
           href="https://github.com/zelmo-ingeniero"
-          class=""
+          class="px-1"
           title="Go to my github profile"
           target="_blank"
         >
@@ -46,7 +36,7 @@
         </a>
         <a
           href="https://www.facebook.com/sergiojared.valencia.3"
-          class=""
+          class="px-1"
           title="Go to my facebook profile"
           target="_blank"
         >
@@ -54,7 +44,7 @@
         </a>
         <a
           href="https://www.kaggle.com/sergiojaredvalencia"
-          class=""
+          class="px-1"
           title="Go to my Kaggle notebooks"
           target="_blank"
         >
@@ -62,7 +52,7 @@
         </a>
         <a
           href="https://www.youtube.com/channel/UCZDzVVdgyy7Da0v6GCqQC5w"
-          class=""
+          class="px-1"
           title="Go to my YouTube videos"
           target="_blank"
         >
@@ -70,14 +60,84 @@
         </a>
         <a
           href="https://www.behance.net/sergiovalenci5"
-          class=""
+          class="px-1"
           title="Go to my UX projects in behance"
           target="_blank"
         >
           <i class="fa-brands fa-square-behance size-hover"></i>
         </a>
       </div>
-    </main>
+
+      <a
+        href="about.html"
+        class="p-1 px-2 font-bold hover:underline"
+        title="Bio and history"
+      >
+        About me
+        <i class="fa-solid fa-arrow-right px-1"></i>
+      </a>
+    </nav>
+    <div class="bg-green">
+      <main class="md:container mx-auto px-3 bg-green">
+        <h1 class="text-5xl font-mono font-bold pt-10">Sergio Jared</h1>
+        <h2 class="text-2xl font-bold">Computational Systems Engineer</h2>
+        <p class="text-sm pt-1">
+          Inside the web i like that they call me as
+          <b>zelmo</b>, sometimes could find me with that name
+        </p>
+        <div class="grow-0">
+          <a
+            href="https://www.linkedin.com/in/sergio-jared-valencia-cortaza-806551253/"
+            class=""
+            title="Go to my LinkedIn profile"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin size-hover"></i>
+          </a>
+          <a
+            href="https://github.com/zelmo-ingeniero"
+            class=""
+            title="Go to my github profile"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github size-hover"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/sergiojared.valencia.3"
+            class=""
+            title="Go to my facebook profile"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook size-hover"></i>
+          </a>
+          <a
+            href="https://www.kaggle.com/sergiojaredvalencia"
+            class=""
+            title="Go to my Kaggle notebooks"
+            target="_blank"
+          >
+            <i class="fa-brands fa-kaggle size-hover"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCZDzVVdgyy7Da0v6GCqQC5w"
+            class=""
+            title="Go to my YouTube videos"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube size-hover"></i>
+          </a>
+          <a
+            href="https://www.behance.net/sergiovalenci5"
+            class=""
+            title="Go to my UX projects in behance"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-behance size-hover"></i>
+          </a>
+        </div>
+  
+      </main>
+    </div>
     <section class="project bg-dark-green">
       <div class="video-container">
         <video
