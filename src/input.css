@@ -4,3 +4,24 @@
 
 /* I cant put tailwind classes here */
 
+@layer components {
+  .name {
+    @apply w-0 inline-block overflow-hidden whitespace-nowrap pr-2 py-2 border-r border-white text-5xl md:text-7xl font-mono font-[1000];
+    animation:
+      typing 1s steps(15, end) 0s forwards,
+      blink 0.8s steps(2, end) infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    to {
+      border: none;
+    }
+  }
+}
