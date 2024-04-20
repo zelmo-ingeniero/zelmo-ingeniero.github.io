@@ -9,10 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <!-- <link rel="stylesheet" href="index.css"> -->
     <link href="./output.css" rel="stylesheet" />
+    <script src="index.js"></script>
   </head>
-  <body class="bg-black-800 text-white">
+  <body
+    class="bg-black-800 text-white selection:bg-term selection:text-black-950"
+  >
     <a id="up"></a>
     <nav
       class="fixed top-0 left-0 right-0 z-50 flex justify-end sm:justify-between backdrop-blur opacity-90"
@@ -35,7 +37,6 @@
           <i class="fa-brands fa-facebook size-hover"></i>
         </a>
       </div>
-
       <a
         href="about.html"
         class="p-1 px-2 font-bold hover:underline"
@@ -45,20 +46,20 @@
         <i class="fa-solid fa-arrow-right px-1"></i>
       </a>
     </nav>
-    <main class="w-100 mx-auto px-3">
-      <div class="container mx-auto">
-        <h2 class="pt-10 sm:pt-20 text-xl font-mono">
+    <main class="w-100 mx-auto px-3 bg-radial">
+      <header class="container mx-auto">
+        <h2 class="pt-20 sm:pt-28 text-xl font-mono">
           Computational Systems Engineer
         </h2>
         <div class="inline-block mt-5">
           <h1 class="name">Sergio Jared</h1>
         </div>
-        <p class="text-sm pt-1">
-          Inside the web i like that they call me as
-          <b>zelmo</b>, sometimes could find me with that name
+        <p class="text-sm text-pretty pt-1">
+          Inside the web i like that they call me as "zelmo", sometimes could
+          find me with that name
         </p>
         <nav
-          class="pt-20 pb-5 flex justify-center sm:justify-end text-xl sm:text-base"
+          class="pt-20 pb-10 flex justify-center sm:justify-end font-semibold text-xl sm:text-base"
         >
           <a
             href="https://www.linkedin.com/in/sergio-jared-valencia-cortaza-806551253/"
@@ -106,7 +107,7 @@
             <p class="hidden sm:block">YouTube</p>
           </a>
         </nav>
-      </div>
+      </header>
     </main>
     <section class="project bg-dark-green">
       <div class="video-container">
@@ -194,25 +195,39 @@
         </a>
       </div>
     </section>
-    <footer class="">
-      <div class="">
-        <h1 class="grid-title font-code">Be free to speak me by here!</h1>
-        <section class="grid-square">
-          <i class="fa-solid fa-envelope-circle-check big-icon"></i>
-          <p class="">
-            zelmo0018@gmail.com
-            <br />
-            vsergiojared@gmail.com
-          </p>
-        </section>
-        <section class="grid-square">
-          <i class="fa-brands fa-whatsapp big-icon"></i>
-          <p class="">+51 27 41 35 84 51</p>
-        </section>
-      </div>
+    <footer class="relative bg-radial py-20">
+      <h1 class="w-100 text-center font-mono font-bold text-2xl">
+        Contact me!
+      </h1>
+      <section class="flex">
+        <i class="fa-solid fa-envelope-circle-check big-icon"></i>
+        <input
+          class="bg-none text-black-900"
+          type="text"
+          value="zelmo0018@gmail.com"
+          id="mail_1"
+        />
+        <button class="border rounded p-1" onclick="copyToClipboard(mail_1)">
+          Copy text
+        </button>
+        <i class="fa-solid fa-envelope-circle-check big-icon"></i>
+        <input
+          class="bg-none text-black-900"
+          type="text"
+          value="vsergiojared@gmail.com"
+          id="mail_2"
+        />
+        <button class="border rounded p-1" onclick="copyToClipboard(mail_2)">
+          Copy text
+        </button>
+      </section>
       <a href="#up" class="ref button size-hover" title="Scroll to up">
         <i class="fa-solid fa-arrow-up"></i>
       </a>
+      <span
+        id="toast-box"
+        class="bg-gray absolute flex items-end bottom-4 right-4 overflow-hidden rounded font-thin text-lg"
+      ></span>
     </footer>
   </body>
 </html>

@@ -6,10 +6,17 @@
 
 @layer components {
   .name {
-    @apply w-0 inline-block overflow-hidden whitespace-nowrap pr-2 py-2 border-r border-white text-5xl md:text-7xl font-mono font-[1000];
+    @apply w-0 inline-block overflow-hidden whitespace-nowrap p-1 border-r-4 border-term text-5xl md:text-7xl font-mono font-[1000];
     animation:
-      typing 1s steps(15, end) 0s forwards,
+      typing 1s steps(12, end) 0s forwards,
       blink 0.8s steps(2, end) infinite;
+  }
+  .bg-radial {
+    background: radial-gradient(
+        ellipse 100% 60% at 50% 70%,
+        hsl(120, 43%, 27%),
+        transparent 54%
+      )
   }
   @keyframes typing {
     from {

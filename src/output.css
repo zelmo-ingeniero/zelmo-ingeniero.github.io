@@ -581,12 +581,10 @@ video {
   width: 0px;
   overflow: hidden;
   white-space: nowrap;
-  border-right-width: 1px;
+  border-right-width: 4px;
   --tw-border-opacity: 1;
-  border-color: hsl(0 0% 100% / var(--tw-border-opacity));
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
+  border-color: hsl(120 100% 40% / var(--tw-border-opacity));
+  padding: 0.25rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 3rem;
   line-height: 1;
@@ -602,8 +600,16 @@ video {
 
 .name {
   animation:
-      typing 1s steps(15, end) 0s forwards,
+      typing 1s steps(12, end) 0s forwards,
       blink 0.8s steps(2, end) infinite;
+}
+
+.bg-radial {
+  background: radial-gradient(
+        ellipse 100% 60% at 50% 70%,
+        hsl(120, 43%, 27%),
+        transparent 54%
+      )
 }
 
 @keyframes typing {
@@ -634,6 +640,14 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -650,12 +664,40 @@ video {
   top: 0px;
 }
 
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
 .z-50 {
   z-index: 50;
 }
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .mx-1 {
@@ -692,6 +734,10 @@ video {
   display: none;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -702,6 +748,18 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border {
@@ -718,12 +776,25 @@ video {
   background-color: hsl(0 0% 16.47% / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
 .bg-none {
   background-image: none;
 }
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-1 {
@@ -741,29 +812,44 @@ video {
   padding-right: 0.75rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pt-1 {
   padding-top: 0.25rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-sm {
@@ -776,12 +862,30 @@ video {
   line-height: 1.75rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
 .lowercase {
   text-transform: lowercase;
+}
+
+.text-black-900 {
+  --tw-text-opacity: 1;
+  color: hsl(210 13% 2% / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -809,6 +913,46 @@ video {
 
 /* I cant put tailwind classes here */
 
+.selection\:bg-term *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: hsl(120 100% 40% / var(--tw-bg-opacity));
+}
+
+.selection\:bg-term *::selection {
+  --tw-bg-opacity: 1;
+  background-color: hsl(120 100% 40% / var(--tw-bg-opacity));
+}
+
+.selection\:text-black-950 *::-moz-selection {
+  --tw-text-opacity: 1;
+  color: hsl(210 13% 1% / var(--tw-text-opacity));
+}
+
+.selection\:text-black-950 *::selection {
+  --tw-text-opacity: 1;
+  color: hsl(210 13% 1% / var(--tw-text-opacity));
+}
+
+.selection\:bg-term::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: hsl(120 100% 40% / var(--tw-bg-opacity));
+}
+
+.selection\:bg-term::selection {
+  --tw-bg-opacity: 1;
+  background-color: hsl(120 100% 40% / var(--tw-bg-opacity));
+}
+
+.selection\:text-black-950::-moz-selection {
+  --tw-text-opacity: 1;
+  color: hsl(210 13% 1% / var(--tw-text-opacity));
+}
+
+.selection\:text-black-950::selection {
+  --tw-text-opacity: 1;
+  color: hsl(210 13% 1% / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -826,8 +970,8 @@ video {
     justify-content: space-between;
   }
 
-  .sm\:pt-20 {
-    padding-top: 5rem;
+  .sm\:pt-28 {
+    padding-top: 7rem;
   }
 
   .sm\:text-base {
