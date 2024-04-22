@@ -35,5 +35,20 @@ export const theme = {
       950: "hsl(122.4, 49.02%, 10%)",
     },
   },
-  extend: {},
+  extend: {
+    animation: {
+      "fade-in": "fade-in 0.5s ease-in-out forwards",
+      "fade-out": "fade-out 0.5s ease-in-out forwards",
+    },
+    keyframes: {
+      "fade-in": {
+        "0%": { opacity: "0%" },
+        "100%": { opacity: "100%" },
+      },
+      "fade-out": {
+        "0%": { opacity: "100%" },
+        "100%": { opacity: "0%" },
+      },
+    },
+  },
 };
