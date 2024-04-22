@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,37 +13,36 @@
     <script src="index.js"></script>
   </head>
   <body
-    class="bg-black-800 text-white selection:bg-term selection:text-black-950"
+    class="bg-black-800 text-green-200 selection:bg-term selection:text-black-950"
   >
     <a id="up"></a>
     <nav
-      class="fixed top-0 left-0 right-0 z-50 flex justify-end sm:justify-between backdrop-blur opacity-90"
+      class="fixed top-0 left-0 right-0 z-50 flex justify-between backdrop-blur opacity-90"
     >
-      <div class="hidden sm:block p-1 px-2">
+      <div class="p-1 pl-8">
         <a
           href="https://www.linkedin.com/in/sergio-jared-valencia-cortaza-806551253/"
-          class="px-1 sm:text-lg md:text-xl"
+          class="px-1"
           title="Go to my LinkedIn profile"
           target="_blank"
         >
-          <i class="fa-brands fa-linkedin size-hover"></i>
+          <i class="fa-brands fa-linkedin hover:text-green-100"></i>
         </a>
         <a
           href="https://www.facebook.com/sergiojared.valencia.3"
-          class="px-1 sm:text-lg md:text-xl"
+          class="px-1"
           title="Go to my facebook profile"
           target="_blank"
         >
-          <i class="fa-brands fa-facebook size-hover"></i>
+          <i class="fa-brands fa-facebook hover:text-green-100"></i>
         </a>
       </div>
       <a
         href="about.html"
-        class="p-1 px-2 font-bold hover:underline"
-        title="Bio and history"
+        class="p-1 pr-10 font-bold hover:text-green-100 hover:underline"
+        title="My bio and history"
       >
         About me
-        <i class="fa-solid fa-arrow-right px-1"></i>
       </a>
     </nav>
     <main class="w-100 mx-auto px-3 bg-radial">
@@ -63,49 +62,50 @@
         >
           <a
             href="https://www.linkedin.com/in/sergio-jared-valencia-cortaza-806551253/"
-            class="mx-1 flex items-center"
+            class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
             title="Go to my LinkedIn profile"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin m-1"></i>
-            <p class="hidden sm:block">Linkedin</p>
+            <i class="fa-brands fa-linkedin m-1 "></i>
+            <p class="hidden sm:block">Sergio Jared</p>
           </a>
           <a
             href="https://github.com/zelmo-ingeniero"
-            class="mx-1 flex items-center"
+            class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
             title="Go to my github profile"
             target="_blank"
           >
-            <i class="fa-brands fa-github m-1"></i>
-            <p class="hidden sm:block">Github</p>
+            <i class="fa-brands fa-github m-1 "></i>
+            <p class="hidden sm:block">zelmo</p>
           </a>
           <a
             href="https://www.facebook.com/sergiojared.valencia.3"
-            class="mx-1 flex items-center"
+            class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
             title="Go to my facebook profile"
             target="_blank"
           >
-            <i class="fa-brands fa-facebook m-1"></i>
-            <p class="hidden sm:block">Facebook</p>
-          </a>
-          <a
-            href="https://www.kaggle.com/sergiojaredvalencia"
-            class="mx-1 flex items-center"
-            title="Go to my Kaggle notebooks"
-            target="_blank"
-          >
-            <i class="fa-brands fa-kaggle m-1"></i>
-            <p class="hidden sm:block">Kaggle</p>
+            <i class="fa-brands fa-facebook m-1 "></i>
+            <p class="hidden sm:block">Sergio Jared</p>
           </a>
           <a
             href="https://www.youtube.com/channel/UCZDzVVdgyy7Da0v6GCqQC5w"
-            class="mx-1 flex items-center"
+            class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
             title="Go to my YouTube videos"
             target="_blank"
           >
-            <i class="fa-brands fa-youtube m-1"></i>
-            <p class="hidden sm:block">YouTube</p>
+            <i class="fa-brands fa-youtube m-1 "></i>
+            <p class="hidden sm:block">zelmo</p>
           </a>
+          <a
+            href="https://www.kaggle.com/sergiojaredvalencia"
+            class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+            title="Go to my Kaggle notebooks"
+            target="_blank"
+          >
+            <i class="fa-brands fa-kaggle m-1 "></i>
+            <p class="hidden sm:block">Sergio Jared</p>
+          </a>
+          
         </nav>
       </header>
     </main>
@@ -159,37 +159,47 @@
       <h1 class="w-100 text-center font-mono font-bold text-2xl">
         Contact me!
       </h1>
-      <section class="flex flex-wrap">
-        <i class="fa-solid fa-envelope-circle-check big-icon"></i>
-        <input
-          class="bg-none text-black-900"
-          type="text"
-          value="zelmo0018@gmail.com"
-          id="mail_1"
-        />
-        <button class="border rounded p-1" onclick="copyToClipboard(mail_1)">
-          Copy text
-        </button>
-        <i class="fa-solid fa-envelope-circle-check big-icon"></i>
-        <input
-          class="bg-none text-black-900"
-          type="text"
-          value="vsergiojared@gmail.com"
-          id="mail_2"
-        />
-        <button class="border rounded p-1" onclick="copyToClipboard(mail_2)">
-          Copy text
-        </button>
+      <section class="w-80 mx-auto flex justify-center flex-wrap py-4">
+        <div class="flex py-4">
+          <a
+            class="w-48 bg-gray/0 p-1 hover:text-green-100 hover:underline"
+            href="mailto:zelmo0018@gmail.com"
+            id="mail_1"
+          >
+            zelmo0018@gmail.com
+          </a>
+          <button
+            id="zelmo0018@gmail.com"
+            class="bg-green-600 hover:bg-green-500 font-semibold rounded-lg mx-2 px-2 py-1 disabled:bg-green-900 disabled:text-green-400"
+            onclick="copyToClipboard('zelmo0018@gmail.com')"
+          >
+            <i class="fa-solid fa-copy"></i>
+            Copy
+          </button>
+        </div>
+        <div class="flex py-4">
+          <a
+            class="w-48 bg-gray/0 p-1 hover:text-green-100 hover:underline"
+            href="mailto:vsergiojared@gmail.com"
+            id="mail_2"
+          >
+            vsergiojared@gmail.com
+          </a>
+          <button
+            id="vsergiojared@gmail.com"
+            class="bg-green-600 hover:bg-green-500 font-semibold rounded-lg mx-2 px-2 py-1 disabled:bg-green-900 disabled:text-green-400"
+            onclick="copyToClipboard('vsergiojared@gmail.com')"
+          >
+            <i class="fa-solid fa-copy"></i>
+            Copy
+          </button>
+        </div>
+        <a href="#up" class="mt-10 px-4 border border-green-300 hover:text-white hover:border-white rounded text-lg font-semibold" title="Scroll to up">
+          Back to top 
+          <i class="fa-solid fa-arrow-up pl-1"></i>
+        </a>
       </section>
-      <a href="#up" class="ref button size-hover" title="Scroll to up">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
-      <span id="toast" class="toast">
-        <i
-          class="fa-solid fa-circle-check px-2 my-auto align-middle text-green-400"
-        ></i>
-        <p class="p-2">Copied to clipboard</p>
-      </span>
+      <span id="toast" class="toast"> </span>
     </footer>
   </body>
 </html>

@@ -20,7 +20,7 @@
       typing 1s steps(12, end) forwards;
   }
   .toast {
-    @apply opacity-0 bg-gray fixed mx-auto w-11/12 sm:w-8/12 md:w-6/12 flex justify-center bottom-4 inset-x-0 rounded font-thin text-sm sm:text-base;
+    @apply opacity-0 bg-black-200 fixed mx-auto w-10/12 sm:w-8/12 md:w-6/12 flex justify-center bottom-4 inset-x-0 rounded font-thin text-sm sm:text-base;
   }
   @keyframes typing {
     from {
