@@ -37,18 +37,11 @@
           <i class="fa-brands fa-facebook hover:text-green-100"></i>
         </a>
       </div>
-      <a
-        href="about.html"
-        class="p-1 pr-10 font-bold hover:text-green-100 hover:underline"
-        title="My bio and history"
-      >
-        About me
-      </a>
     </nav>
     <main class="w-100 mx-auto px-3 bg-radial">
       <header class="container mx-auto">
         <h2 class="pt-20 sm:pt-28 text-xl sm:text-2xl font-mono">
-          Computational Systems Engineer
+          Systems Engineer
         </h2>
         <div class="inline-block mt-5">
           <h1 class="name">Sergio Jared</h1>
@@ -108,365 +101,422 @@
         </nav>
       </header>
     </main>
-    <aside></aside>
-    <summary></summary>
-
-    <section class="timeline">
-      <div class="timeline-container">
-          <div class="timeline-item">
-              <div class="timeline-item-content">
-                  <h3 class="timeline-item-title">Año 2020</h3>
-                  <p class="timeline-item-text">Inicio del proyecto</p>
-              </div>
-          </div>
-          <div class="timeline-item">
-              <div class="timeline-item-content">
-                  <h3 class="timeline-item-title">Año 2021</h3>
-                  <p class="timeline-item-text">Desarrollo de la primera versión</p>
-              </div>
-          </div>
-      </div>
-  </section>
-
     <h1 class="px-2 pt-10 pb-4 text-4xl font-bold font-mono text-term">
       Experience
     </h1>
-    <section
-      class="flex flex-wrap w-11/12 mx-auto border-l-green-400 border-l-4"
-    >
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">June 2023 - Present</h2>
-        <h1 class="pb-4 font-semibold text-2xl">
-          <i class="fa-solid fa-gear"></i>
-          Infrastructure
-        </h1>
-        <p class="mb-4">
-          My first professional job was in Exos Technology, I began as
-          <span class="italic">scholar</span> for six months, when I graduated
-          from university then became an <span class="italic">engineer</span> in
-          the infrastructure team.
-        </p>
-        <p class="mb-2">
-          During my time in this company I got the next achievements:
-        </p>
-        <ul class="px-2 divide-y divide-gray font-thin">
-          <li class="py-4">
-            I created one
-            <a href="#" class="text-term hover:underline">
-              high available shared filesystem
-            </a>
-            by using different Linux tools like Samba, OCFS, ISCSI inside of
-            Cloud servers
-          </li>
-          <li class="py-4">
-            I automated the inventories creation by developing one using
-            <a href="#" class="text-term hover:underline"> CLI app </a>
-            Javascript and the
-            <span class="italic">AWS SDK to NodeJS</span> library
-          </li>
-          <li class="py-4">
-            I created one directory structure with credentials and reusable
-            infrastructure templates using <span class="italic">HCL</span>,
-            <span class="italic">Terraform</span> and
-            <span class="italic">Markdown</span> to document it
-          </li>
-          <li class="py-4">
-            I helped the company to be Partners of Amazon and Datadog by
-            completing a variety of courses and exams
-          </li>
-          <li class="py-4">
-            The company given me one <span class="italic">expert badge</span> by
-            complete successfully one internal competence
-          </li>
-        </ul>
-      </div>
-      <div class="px-6 text-pretty">
-        <h2 class="py-2 text-sm text-term">August 2022 - February 2023</h2>
-        <h1 class="pb-4 font-semibold text-2xl">
-          <i class="fa-solid fa-building-columns"></i>
-          Apprenticeship
-        </h1>
-        <p class="mb-2">
-          I was the
-          <span class="italic">Computer Centers Manager Assistant.</span>
-          Here I was still studying the university last year, and to do this
-          work was a requirement
-        </p>
-        <ul class="px-2 divide-y divide-gray font-thin">
-          <li class="py-4">
-            Improvement to almost two hundred computers by doing electrical
-            connections, hardware assembling, Windows OS installation, software
-            installations and software configurations
-          </li>
-          <li class="py-4">
-            Network administration to four computer classrooms doing structured
-            cabling, connections to switches/repeaters and OS configurations
-          </li>
-        </ul>
-      </div>
-    </section>
-    <div class="pt-20">
-      <ul
-        class="flex justify-center flex-wrap mx-auto text-sm font-semibold w-11/12 sm:w-9/12 md:w-7/12 lg:w-5/12"
-      >
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Linux</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Terraform</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">UX / UI</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">NodeJS</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">AWS</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Shellscript</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Git</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">CI / CD</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Docker</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">PHP</li>
-        <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Backend</li>
-      </ul>
-    </div>
+    <main class="flex flex-col w-10/12 sm:w-8/12 mx-auto">
+      <section class="flex pb-20">
+        <div
+          class="flex bg-gradient-to-b from-green-500 to-green-950 w-0.5 justify-center mr-10"
+        >
+          <i
+            class="fa-solid fa-gear bg-black-800 border-2 rounded-full border-green-500 h-fit p-2 mt-6"
+          ></i>
+        </div>
+        <aside class="text-pretty">
+          <h2 class="py-2 text-term">June 2023 - Present</h2>
+          <h1 class="pb-4 font-semibold text-2xl">Infrastructure</h1>
+          <p class="mb-4">
+            My first professional job was in Exos Technology, I began as
+            <span class="italic">scholar</span> for six months, when I graduated
+            from university then became an
+            <span class="italic">engineer</span> in the infrastructure team.
+          </p>
+          <p class="mb-2">
+            During my time in this company I got the next achievements:
+          </p>
+          <ul class="px-2 divide-y divide-gray font-thin">
+            <li class="py-4">
+              I created one
+              <a href="#" class="text-term hover:underline">
+                high available shared filesystem
+              </a>
+              by using different Linux tools like Samba, OCFS, ISCSI inside of
+              Cloud servers
+            </li>
+            <li class="py-4">
+              I automated the inventories creation by developing one using
+              <a href="#" class="text-term hover:underline"> CLI app </a>
+              Javascript and the
+              <span class="italic">AWS SDK to NodeJS</span> library
+            </li>
+            <li class="py-4">
+              I created one directory structure with credentials and reusable
+              infrastructure templates using <span class="italic">HCL</span>,
+              <span class="italic">Terraform</span> and
+              <span class="italic">Markdown</span> to document it
+            </li>
+            <li class="py-4">
+              I helped the company to be Partners of Amazon and Datadog by
+              completing a variety of courses and exams
+            </li>
+            <li class="py-4">
+              The company given me one
+              <span class="italic">expert badge</span> by complete successfully
+              one internal competence
+            </li>
+          </ul>
+          <ul
+            class="flex justify-center flex-wrap mx-auto text-sm font-semibold w-11/12 sm:w-9/12 md:w-7/12 lg:w-5/12"
+          >
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Linux</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Terraform</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">NodeJS</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">AWS</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Shellscript</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Git</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">CI / CD</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Docker</li>
+          </ul>
+        </aside>
+      </section>
+      <section class="flex pb-20">
+        <div
+          class="flex bg-gradient-to-b from-green-500 to-green-950 w-0.5 justify-center mr-10"
+        >
+          <i
+            class="fa-solid fa-building-columns bg-black-800 border-2 rounded-full border-green-500 h-fit p-2 mt-6"
+          ></i>
+        </div>
+        <aside class="text-pretty">
+          <h2 class="py-2 text-term">August 2022 - February 2023</h2>
+          <h1 class="pb-4 font-semibold text-2xl">Apprenticeship</h1>
+          <p class="mb-2">
+            I was the
+            <span class="italic">Computer Centers Manager Assistant.</span>
+            Here I was still studying the university last year, and to do this
+            work was a requirement
+          </p>
+          <ul class="px-2 divide-y divide-gray font-thin">
+            <li class="py-4">
+              Improvement to almost two hundred computers by doing electrical
+              connections, hardware assembling, Windows OS installation,
+              software installations and software configurations
+            </li>
+            <li class="py-4">
+              Network administration to four computer classrooms doing
+              structured cabling, connections to switches/repeaters and OS
+              configurations
+            </li>
+          </ul>
+          <ul
+            class="flex justify-center flex-wrap mx-auto text-sm font-semibold w-11/12 sm:w-9/12 md:w-7/12 lg:w-5/12"
+          >
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Linux</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Backend</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
 
     <h1 class="px-2 pt-10 pb-4 text-4xl font-bold font-mono text-term">
       Education
     </h1>
-    <section
-      class="flex flex-wrap w-11/12 mx-auto border-l-green-400 border-l-4"
-    >
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">August 2019 - June 2024</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          <i class="fa-solid fa-graduation-cap"></i>
-          Computational Systems Engineering
-        </h1>
-        <p class="mb-4">
-          Professional career that was accomplished in the ITSTB by TECNM. The
-          principal learnings were: software engineering, databases, frontend,
-          POO, backend, networking, operative systems, frameworks, and more
-        </p>
-        <p class="mb-4">This were my best projects:</p>
-        <ul class="px-2 divide-y divide-gray font-thin">
-          <li class="py-4">
-            An responsive frontend with multimedia, logos and fonts using pure
-            HTML, CSS and JS
-          </li>
-          <li class="py-4">
-            One
+    <main class="flex flex-col w-10/12 sm:w-8/12 mx-auto">
+      <section class="flex pb-20">
+        <div
+          class="flex bg-gradient-to-b from-green-500 to-green-950 w-0.5 justify-center mr-10"
+        >
+          <i
+            class="fa-solid fa-graduation-cap bg-black-800 border-2 rounded-full border-green-500 h-fit p-2 mt-6"
+          ></i>
+        </div>
+        <aside class="pb-20 text-pretty">
+          <h2 class="py-2 text-sm text-term">August 2019 - June 2024</h2>
+          <h1 class="py-4 font-semibold text-2xl">
+            Computational Systems Engineering
+          </h1>
+          <p class="mb-4">
+            Professional career that was accomplished in the ITSTB by TECNM. The
+            principal learnings were: software engineering, databases, frontend,
+            POO, backend, networking, operative systems, frameworks, and more
+          </p>
+          <p class="mb-4">This were my best projects:</p>
+          <ul class="px-2 divide-y divide-gray font-thin">
+            <li class="py-4">
+              An responsive frontend with multimedia, logos and fonts using pure
+              HTML, CSS and JS
+            </li>
+            <li class="py-4">
+              One
+              <a
+                href="#"
+                class="text-term hover:underline"
+                title="Official unique code endorsed by Coursera"
+                target="_blank"
+              >
+                <span class="">fullstack website with database</span>
+              </a>
+              using PHP, HTML, Bootstrap the Laravel framework and MySQL
+            </li>
+            <li class="py-4">
+              Several 3D models and animations using ThreeJS and CanonJS
+            </li>
+            <li class="py-4">
+              A desktop application with database by using Java Swing and MySQL
+            </li>
+            <li class="py-4">Final Average of 92% by high responsibility</li>
+          </ul>
+          <a
+            href="#"
+            class="block w-full text-right text-term hover:underline"
+            title="Official unique code endorsed by Coursera"
+            target="_blank"
+          >
+            See College degree
+          </a>
+          <ul
+            class="flex justify-center flex-wrap mx-auto text-sm font-semibold w-11/12 sm:w-9/12 md:w-7/12 lg:w-5/12"
+          >
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Laravel</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">PHP</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">Linux</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">NodeJS</li>
+            <li class="px-4 py-1 mx-1 my-2 rounded-xl bg-gray">SQL</li>
+          </ul>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">2022</h2>
+            <h1 class="py-4 font-semibold text-2xl">English basic</h1>
+            <a
+              href="https://1drv.ms/b/s!ArpNT26nLatEiFowAgHFI3RVOjnU?e=Hy2DY6"
+              class="block w-full text-right text-term hover:underline"
+              title="Certificate endorsed by SEP"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">August 2016 - September 2019</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              Technical Programming High school
+            </h1>
+            <a
+              href="http://siseems.sems.gob.mx/perfil/perfil_egresod.php?id_alumno=3777376"
+              class="block w-full text-right text-term hover:underline"
+              title="Official unique code endorsed by SISEEMS"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <h1 class="px-2 pt-10 pb-4 text-xl font-bold font-mono text-term">
+      Cloud Certifications
+    </h1>
+    <main class="flex flex-col w-10/12 sm:w-8/12 mx-auto">
+      <section class="flex pb-20">
+        <div
+          class="flex bg-gradient-to-b from-green-500 to-green-950 w-0.5 justify-center mr-10"
+        >
+          <i
+            class="fa-solid fa-cloud bg-black-800 border-2 rounded-full border-green-500 h-fit p-2 mt-6"
+          ></i>
+        </div>
+
+        <aside class="pb-20 text-pretty">
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">December 2023</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              AWS Cloud Practitioner Certification
+            </h1>
             <a
               href="#"
-              class="text-term hover:underline"
+              class="block w-full text-right text-term hover:underline"
+              title="certified by AWS training"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">October 2023</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              Technical Specialist by Datadog Partner Network
+            </h1>
+            <a
+              href="https://datadog.docebosaas.com/share/gamification/badges/external/28096b9b-162e-45d8-96c2-7038bbbf3180?lang=en"
+              class="block w-full text-right text-term hover:underline"
+              title="Badge for complete a course by DPN"
+              target="_blank"
+            >
+              Badge
+            </a>
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">September 2023</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              AWS Training about Cloud Practitioner by CompuEducacion
+            </h1>
+            <a
+              href="https://1drv.ms/b/s!ArpNT26nLatEyFlHTrprCFRlstgB?e=zTzg2G"
+              class="block w-full text-right text-term hover:underline"
+              title="by AWS"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">September 2023</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              Developer 101 by Datadog Learning Center
+            </h1>
+            <a
+              href="https://learn.datadoghq.com/certificates/hlphykdjjq"
+              class="block w-full text-right text-term hover:underline"
+              title="Official unique code by Datadog"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <h1 class="px-2 pt-10 pb-4 text-xl font-bold font-mono text-term">
+      Google Certifications
+    </h1>
+    <main class="flex flex-col w-10/12 sm:w-8/12 mx-auto">
+      <section class="flex pb-20">
+        <div
+          class="flex bg-gradient-to-b from-green-500 to-green-950 w-0.5 justify-center mr-10"
+        >
+        <i
+            class="fa-solid fa-cloud bg-black-800 border-2 rounded-full border-green-500 h-fit p-2 mt-6"
+          ></i>
+      </div>
+        <aside class="pb-20 text-pretty">
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">February 2024</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              Cybersecurity by Google Career
+            </h1>
+            <p>Online course</p>
+            <a
+              href="https://coursera.org/verify/professional-cert/4D947Y2PDQN2"
+              class="block w-full text-right text-term hover:underline"
               title="Official unique code endorsed by Coursera"
               target="_blank"
             >
-              <span class="">fullstack website with database</span>
+              Certificate
             </a>
-            using PHP, HTML, Bootstrap the Laravel framework and MySQL
-          </li>
-          <li class="py-4">
-            Several 3D models and animations using ThreeJS and CanonJS
-          </li>
-          <li class="py-4">
-            A desktop application with database by using Java Swing and MySQL
-          </li>
-          <li class="py-4">Final Average of 92% by high responsibility</li>
-        </ul>
-        <a
-          href="#"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by Coursera"
-          target="_blank"
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">September 2023</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              IT Support Specialist by Google Career
+            </h1>
+            <a
+              href="https://coursera.org/verify/professional-cert/F6ZYLEHYZEUG"
+              class="block w-full text-right text-term hover:underline"
+              title="Official unique code endorsed by Coursera"
+              target="_blank"
+            >
+              <span class="external-link">Certificate</span>
+            </a>
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">May 2023</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              Data Analyst by Google Career
+            </h1>
+            <a
+              href="https://www.coursera.org/account/accomplishments/professional-cert/5JBAH8YJ8K34"
+              class="block w-full text-right text-term hover:underline"
+              title="Official unique code endorsed by Coursera"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">January 2023</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              UX Designer by Google Career
+            </h1>
+            <a
+              href="https://www.coursera.org/account/accomplishments/professional-cert/TR3SGP6JRVK8"
+              class="block w-full text-right text-term hover:underline"
+              title="Official unique code endorsed by Coursera"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <h1 class="px-2 pt-10 pb-4 text-xl font-bold font-mono text-term">
+      Other Certifications
+    </h1>
+    <main class="flex flex-col w-10/12 sm:w-8/12 mx-auto">
+      <section class="flex pb-20">
+        <div
+          class="flex bg-gradient-to-b from-green-500 to-green-950 w-0.5 justify-center mr-10"
         >
-          See College degree
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">February 2024</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          Cybersecurity by Google Career
-        </h1>
-        <p>Online course</p>
-        <a
-          href="https://coursera.org/verify/professional-cert/4D947Y2PDQN2"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by Coursera"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">December 2023</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          AWS Cloud Practitioner Certification
-        </h1>
-        <a
-          href="#"
-          class="block w-full text-right text-term hover:underline"
-          title="certified by AWS training"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">October 2023</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          Technical Specialist by Datadog Partner Network
-        </h1>
-        <a
-          href="https://datadog.docebosaas.com/share/gamification/badges/external/28096b9b-162e-45d8-96c2-7038bbbf3180?lang=en"
-          class="block w-full text-right text-term hover:underline"
-          title="Badge for complete a course by DPN"
-          target="_blank"
-        >
-          Badge
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">September 2023</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          AWS Training about Cloud Practitioner by CompuEcucacion
-        </h1>
-        <a
-          href="https://1drv.ms/b/s!ArpNT26nLatEyFlHTrprCFRlstgB?e=zTzg2G"
-          class="block w-full text-right text-term hover:underline"
-          title="by AWS"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">September 2023</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          IT Support Specialist by Google Career
-        </h1>
-        <a
-          href="https://coursera.org/verify/professional-cert/F6ZYLEHYZEUG"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by Coursera"
-          target="_blank"
-        >
-          <span class="external-link">Certificate</span>
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">September 2023</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          Developer 101 by Datadog Learning Center
-        </h1>
-        <a
-          href="https://learn.datadoghq.com/certificates/hlphykdjjq"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code by Datadog"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">May 2023</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          Data Analyst by Google Career
-        </h1>
-        <a
-          href="https://www.coursera.org/account/accomplishments/professional-cert/5JBAH8YJ8K34"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by Coursera"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">January 2023</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          UX Designer by Google Career
-        </h1>
-        <a
-          href="https://www.coursera.org/account/accomplishments/professional-cert/TR3SGP6JRVK8"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by Coursera"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">2022</h2>
-        <h1 class="py-4 font-semibold text-2xl">English basic</h1>
-        <a
-          href="https://1drv.ms/b/s!ArpNT26nLatEiFowAgHFI3RVOjnU?e=Hy2DY6"
-          class="block w-full text-right text-term hover:underline"
-          title="Certificate endorsed by SEP"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">2020</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          Introduction to Spatial Geointeligence MOOC
-        </h1>
-        <a
-          href="https://mexicox.gob.mx/certificates/9473c8c38d4b496f818e9d445325d9e2"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by MexicoX"
-          target="_blank"
-        >
-          First
-        </a>
-        and
-        <a
-          href="https://mexicox.gob.mx/certificates/a309bb71fa0c40599d05792679f89e2e"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by MexicoX"
-          target="_blank"
-        >
-          Second
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">2019</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          Web research to college students MOOC
-        </h1>
-        <a
-          href="https://mexicox.gob.mx/certificates/53428c094e904206b049f6c7f050d7e4"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by MexicoX"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">August 2016 - September 2019</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          Technical Programming High school
-        </h1>
-        <a
-          href="http://siseems.sems.gob.mx/perfil/perfil_egresod.php?id_alumno=3777376"
-          class="block w-full text-right text-term hover:underline"
-          title="Official unique code endorsed by SISEEMS"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-      <div class="px-6 pb-20 text-pretty">
-        <h2 class="py-2 text-sm text-term">2017</h2>
-        <h1 class="py-4 font-semibold text-2xl">
-          Technologies to productivity and specialty in computer equipment
-          maintenance by Microsoft
-        </h1>
-        <a
-          href="https://1drv.ms/b/s!ArpNT26nLatEiFwG2imMtUvUssy-?e=h8mcTH"
-          class="block w-full text-right text-term hover:underline"
-          title="Voucher of the collaboration between Conocer, Eduilt & Microsoft"
-          target="_blank"
-        >
-          Certificate
-        </a>
-      </div>
-    </section>
+        <i
+        class="fa-solid fa-file-code bg-black-800 border-2 rounded-full border-green-500 h-fit p-2 mt-6"
+      ></i>
+    </div>
+        <aside class="pb-20 text-pretty">
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">2020</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              Introduction to Spatial Geointeligence MOOC
+            </h1>
+            <a
+              href="https://mexicox.gob.mx/certificates/9473c8c38d4b496f818e9d445325d9e2"
+              class="block w-full text-right text-term hover:underline"
+              title="Official unique code endorsed by MexicoX"
+              target="_blank"
+            >
+              First
+            </a>
+            and
+            <a
+              href="https://mexicox.gob.mx/certificates/a309bb71fa0c40599d05792679f89e2e"
+              class="block w-full text-right text-term hover:underline"
+              title="Official unique code endorsed by MexicoX"
+              target="_blank"
+            >
+              Second
+            </a>
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">2019</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              Web research to college students MOOC
+            </h1>
+            <a
+              href="https://mexicox.gob.mx/certificates/53428c094e904206b049f6c7f050d7e4"
+              class="block w-full text-right text-term hover:underline"
+              title="Official unique code endorsed by MexicoX"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+          <div class="pb-20 text-pretty">
+            <h2 class="py-2 text-sm text-term">2017</h2>
+            <h1 class="py-4 font-semibold text-2xl">
+              Technologies to productivity and specialty in computer equipment
+              maintenance by Microsoft
+            </h1>
+            <a
+              href="https://1drv.ms/b/s!ArpNT26nLatEiFwG2imMtUvUssy-?e=h8mcTH"
+              class="block w-full text-right text-term hover:underline"
+              title="Voucher of the collaboration between Conocer, Eduilt & Microsoft"
+              target="_blank"
+            >
+              Certificate
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
     <h1 class="px-2 pt-10 pb-4 text-4xl font-bold font-mono text-term">
       Biography
     </h1>
