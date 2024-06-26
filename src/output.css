@@ -602,8 +602,11 @@ video {
   width: 0px;
   overflow: hidden;
   white-space: nowrap;
+  border-right-width: 4px;
   --tw-border-opacity: 1;
   border-color: hsl(120 100% 40% / var(--tw-border-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 3rem;
   line-height: 1;
@@ -731,6 +734,36 @@ video {
   margin-bottom: auto;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -753,6 +786,14 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .block {
@@ -1048,6 +1089,14 @@ video {
   padding-top: 5rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
 .text-right {
   text-align: right;
 }
@@ -1233,7 +1282,23 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    .md\:md\:mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-10\/12 {
+    width: 83.333333%;
   }
 }
