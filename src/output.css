@@ -614,8 +614,8 @@ video {
 
 @media (min-width: 768px) {
   .name {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -919,17 +919,8 @@ video {
   border-radius: 0.75rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-2 {
   border-width: 2px;
-}
-
-.border-green-400 {
-  --tw-border-opacity: 1;
-  border-color: hsl(120 41% 58% / var(--tw-border-opacity));
 }
 
 .border-green-500 {
@@ -947,36 +938,13 @@ video {
   background-color: hsl(0 0% 16.47% / var(--tw-bg-opacity));
 }
 
-.bg-gray\/0 {
-  background-color: hsl(0 0% 16.47% / 0);
-}
-
-.bg-green-600 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(120 46% 36% / var(--tw-bg-opacity));
-}
-
 .bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: hsl(120 42% 45% / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
 .bg-none {
   background-image: none;
-}
-
-.from-green-500 {
-  --tw-gradient-from: hsl(120, 42%, 45%) var(--tw-gradient-from-position);
-  --tw-gradient-to: hsl(120 42% 45% / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-green-950 {
-  --tw-gradient-to: hsl(122, 49%, 10%) var(--tw-gradient-to-position);
 }
 
 .p-1 {
@@ -1205,38 +1173,13 @@ video {
   color: hsl(210 13% 1% / var(--tw-text-opacity));
 }
 
-.hover\:border-green-300:hover {
-  --tw-border-opacity: 1;
-  border-color: hsl(120 47% 85% / var(--tw-border-opacity));
-}
-
-.hover\:bg-green-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(120 42% 45% / var(--tw-bg-opacity));
-}
-
 .hover\:text-green-100:hover {
   --tw-text-opacity: 1;
   color: hsl(120 41% 97% / var(--tw-text-opacity));
 }
 
-.hover\:text-green-300:hover {
-  --tw-text-opacity: 1;
-  color: hsl(120 47% 85% / var(--tw-text-opacity));
-}
-
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.disabled\:bg-green-900:disabled {
-  --tw-bg-opacity: 1;
-  background-color: hsl(122 36% 20% / var(--tw-bg-opacity));
-}
-
-.disabled\:text-green-400:disabled {
-  --tw-text-opacity: 1;
-  color: hsl(120 41% 58% / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1269,24 +1212,14 @@ video {
     padding-top: 7rem;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:hover\:underline:hover {

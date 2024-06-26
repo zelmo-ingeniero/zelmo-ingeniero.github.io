@@ -12,7 +12,7 @@
     );
   }
   .name {
-    @apply w-0 inline-block overflow-hidden whitespace-nowrap p-1 border-r-4 border-term text-6xl md:text-5xl font-mono font-[1000];
+    @apply w-0 inline-block overflow-hidden whitespace-nowrap p-1 border-r-4 border-term text-6xl md:text-4xl font-mono font-[1000];
     animation:
       blink 0.8s steps(2, end) infinite,
       typing 1s steps(12, end) forwards;
