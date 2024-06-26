@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-export const content = ["./src/**/*.{html,js}", "./src/*.{html,js}"];
+export const content = ["index.html", "./src/**/*.{html,js}", "./src/*.{html,js}"];
 export const theme = {
   colors: {
     black: {

@@ -614,7 +614,7 @@ video {
 
 @media (min-width: 768px) {
   .name {
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 1;
   }
 }
@@ -706,6 +706,11 @@ video {
   margin: 0.25rem;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -716,18 +721,9 @@ video {
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-2 {
@@ -748,10 +744,6 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .mt-6 {
@@ -819,8 +811,8 @@ video {
   width: 5rem;
 }
 
-.w-6\/12 {
-  width: 50%;
+.w-4\/12 {
+  width: 33.333333%;
 }
 
 .w-fit {
@@ -915,10 +907,6 @@ video {
   border-radius: 0.25rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -968,47 +956,23 @@ video {
   background-color: hsl(120 46% 36% / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-green-500 {
   --tw-bg-opacity: 1;
-  background-color: hsl(122 100% 100% / var(--tw-bg-opacity));
-}
-
-.bg-black-200 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(210 13% 17% / var(--tw-bg-opacity));
-}
-
-.bg-black-500 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(210 13% 11% / var(--tw-bg-opacity));
+  background-color: hsl(120 42% 45% / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
 .bg-none {
   background-image: none;
-}
-
-.from-black-400 {
-  --tw-gradient-from: hsl(210, 13%, 13%) var(--tw-gradient-from-position);
-  --tw-gradient-to: hsl(210 13% 13% / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-green-500 {
   --tw-gradient-from: hsl(120, 42%, 45%) var(--tw-gradient-from-position);
   --tw-gradient-to: hsl(120 42% 45% / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-black-700 {
-  --tw-gradient-to: hsl(210, 13%, 7%) var(--tw-gradient-to-position);
 }
 
 .to-green-950 {
@@ -1021,10 +985,6 @@ video {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-1 {
@@ -1087,6 +1047,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
 .pb-52 {
   padding-bottom: 13rem;
 }
@@ -1107,24 +1071,8 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pt-40 {
-  padding-top: 10rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-right {
@@ -1142,11 +1090,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -1171,10 +1114,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .font-semibold {
@@ -1225,8 +1164,6 @@ video {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
-
-/* I cant put tailwind classes here */
 
 .selection\:bg-term *::-moz-selection {
   --tw-bg-opacity: 1;
@@ -1312,16 +1249,16 @@ video {
     display: block;
   }
 
+  .sm\:w-10\/12 {
+    width: 83.333333%;
+  }
+
   .sm\:w-4\/12 {
     width: 33.333333%;
   }
 
   .sm\:w-8\/12 {
     width: 66.666667%;
-  }
-
-  .sm\:w-10\/12 {
-    width: 83.333333%;
   }
 
   .sm\:justify-end {
@@ -1342,6 +1279,16 @@ video {
     line-height: 1.5rem;
   }
 
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:hover\:underline:hover {
     text-decoration-line: underline;
   }
@@ -1349,16 +1296,6 @@ video {
 
 @media (min-width: 768px) {
   .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-6\/12 {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:w-1\/2 {
     width: 50%;
   }
 }
