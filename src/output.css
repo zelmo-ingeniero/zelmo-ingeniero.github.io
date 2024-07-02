@@ -554,6 +554,40 @@ video {
   --tw-contain-style:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .bg-radial {
   background: radial-gradient(
       ellipse 80% 60% at 50% 70%,
@@ -687,8 +721,21 @@ video {
   margin-bottom: auto;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-4 {
@@ -715,16 +762,8 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.block {
-  display: block;
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -777,6 +816,18 @@ video {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -823,6 +874,10 @@ video {
   cursor: pointer;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -837,10 +892,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -964,11 +1015,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .pb-1 {
@@ -1107,6 +1153,11 @@ video {
   color: hsl(120 52.5% 92.5% / var(--tw-text-opacity));
 }
 
+.text-green-300 {
+  --tw-text-opacity: 1;
+  color: hsl(120 47% 85% / var(--tw-text-opacity));
+}
+
 .text-green-400 {
   --tw-text-opacity: 1;
   color: hsl(120 41% 58% / var(--tw-text-opacity));
@@ -1133,6 +1184,42 @@ video {
   --tw-backdrop-blur: blur(8px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media (min-width: 640px) {
+  .sm\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sm\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .sm\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .sm\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .sm\:container {
+      max-width: 1536px;
+    }
+  }
 }
 
 .selection\:bg-term *::-moz-selection {
@@ -1226,6 +1313,11 @@ video {
 .hover\:text-green-100:hover {
   --tw-text-opacity: 1;
   color: hsl(120 41% 97% / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: hsl(122 100% 100% / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
