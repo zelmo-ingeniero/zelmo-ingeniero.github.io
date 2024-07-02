@@ -11,11 +11,11 @@
       transparent 70%
     );
   }
-  .name {
-    @apply w-0 py-1 inline-block overflow-hidden whitespace-nowrap border-r-4 border-term text-5xl sm:text-6xl md:text-7xl font-mono font-[1000];
+  .blink {
+    @apply w-6 md:w-10 border-b-4 border-term;
     animation:
-      blink 0.8s steps(2, end) infinite,
-      typing 1s steps(12, end) forwards;
+      blink 0.8s steps(2, end) infinite
+      /* typing 1s steps(12, end) forwards; */
   }
   .toast {
     @apply opacity-0 bg-black-200 fixed px-4 mx-auto w-fit flex justify-center bottom-4 inset-x-0 rounded font-thin text-sm sm:text-base;
