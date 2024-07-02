@@ -715,6 +715,18 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -756,13 +768,13 @@ video {
   width: 5rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-1 {
@@ -817,6 +829,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -948,6 +964,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pb-1 {
@@ -1114,12 +1135,6 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .selection\:bg-term *::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: hsl(120 100% 40% / var(--tw-bg-opacity));
@@ -1240,10 +1255,6 @@ video {
     width: 66.666667%;
   }
 
-  .sm\:justify-end {
-    justify-content: flex-end;
-  }
-
   .sm\:pt-28 {
     padding-top: 7rem;
   }
@@ -1256,11 +1267,6 @@ video {
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .sm\:hover\:underline:hover {
