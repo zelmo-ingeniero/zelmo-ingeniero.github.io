@@ -1,311 +1,426 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zelmo | Project</title>
+    <title>Sergio Jared project</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="index.js"></script>
   </head>
-  <body class="body bg-gray">
+  <body
+    class="bg-black-800 text-green-200 selection:bg-term selection:text-black-950"
+  >
     <a id="up"></a>
-    <nav class="bar">
-      <a href="index.html" class="bar-button ref" title="Return to home">
-        <i class="fa-solid fa-arrow-left bg-none"></i>
-        Home
-      </a>
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 flex backdrop-blur opacity-90 p-2"
+    >
       <a
-        href="about.html"
-        class="bar-button ref"
-        title="Go to see more about me"
-        >About me</a
+        href="../index.html"
+        class="px-4 font-bold text-green-300 hover:text-white hover:underline"
+        title="Return to home"
       >
+        <i class="fa-solid fa-arrow-left mr-2"></i>
+        Go back
+      </a>
     </nav>
-    <h1 class="title-green">A beer shop's UX Design process</h1>
-    <p class="readable paragraph">
-      Sees the menu where you want! this app allows everyone with internet
-      conection preview the drinks and promotions in a menu.
-    </p>
-    <p class="readable paragraph">
-      To the clients inside the beer house have the posibility to make orders
-      avoiding the noises and enhance the eficiency.
-    </p>
-    <h1 class="title-green">My role</h1>
-    <ul class="list">
-      <li class="readable">I managed all the parts of the project</li>
-      <li class="readable">Doing users researchs</li>
-      <li class="readable">All the designs and documents of the project</li>
-      <li class="readable">Low and high fidelity prototypes</li>
-    </ul>
-    <h1 class="title-green">Project Goal</h1>
-    <p class="readable paragraph">
-      Design an app to preview online the outdoor Beer House's menu also allows
-      the users orders to their tables.
-    </p>
-    <h1 class="title-green">Emphatysing</h1>
-    <h2 class="subtitle1">Pain points</h2>
-    <h3 class="subtitle2 paragraph">Insegurity</h3>
-    <p class="readable paragraph">
-      Some users has seen under-age persons drinking alcoholic beverages
-    </p>
-    <h3 class="subtitle2 paragraph">Comfort</h3>
-    <p class="readable paragraph">
-      The most want preview which products can ordered or there is promotions
-      without need leaving home
-    </p>
-    <h3 class="subtitle2 paragraph">Accesibility</h3>
-    <p class="readable paragraph">
-      It should solve the posible mistakes to do easier the comunication and
-      movement
-    </p>
-    <img
-      src="../public/img/brshp-christine.png"
-      class="img-big"
-      alt="persona christine alvarez description"
-      loading="lazy"
-    />
-    <img
-      src="../public/img/brshp-eleuterio.png"
-      class="img-big"
-      alt="persona eleuterio flores description"
-      loading="lazy"
-    />
-    <h2 class="subtitle1">User journey</h2>
-    <img
-      src="../public/img/brshp-user-journey.png"
-      class="img-big"
-      alt="User journey table"
-      loading="lazy"
-    />
-    <h2 class="subtitle1">User story</h2>
-    <img
-      src="../public/img/brshp-user-story.png"
-      class="img-big"
-      alt="Little paper comic of the user using the app"
-      loading="lazy"
-    />
-    <h1 class="title-green">Principal constraints</h1>
-    <ul class="list">
-      <li class="readable">The beer house need more eficiency</li>
-      <li class="readable">
-        Make it more safe to the clients while they orders watching the online
-        menu
-      </li>
-    </ul>
-    <h1 class="title-green">Desing strategy</h1>
-    <h2 class="subtitle1">User flow</h2>
-    <img
-      src="../public/img/brshp-user-flow.png"
-      class="img-big"
-      alt="Digital diagram of the user flow"
-    />
-    <p class="readable paragraph">
-      I did first a set of speed digital wireframes as a speed test, to see how
-      looks it
-    </p>
-    <figure>
-      <img
-        src="../public/img/brshp6.png"
-        class="img-small"
-        alt="paper wireframes with 3 screen versions"
-        loading="lazy"
-      />
-      <figcaption class="readable paragraph">
-        I thinked which elements should have each sceen? to star to draw it, in
-        that moment i was very confident with my wireframes but almost all will
-        be modified.
-      </figcaption>
-      <img
-        src="../public/img/brshp7.png"
-        class="img-small"
-        alt="paper wireframes with 3 screen versions"
-        loading="lazy"
-      />
-      <figcaption class="readable paragraph">
-        Here we can see diferent versions of each screen and how i complement
-        the best parts
-      </figcaption>
-      <p class="readable paragraph">
-        After i improove that few screens and add more thinking alwas whit the
-        user flow in mind
+    <main class="w-11/12 mx-auto sm:container">
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        A beer shop's UX Design process
+      </h1>
+      <p class="pb-2">
+        Sees the menu where you want! this app allows everyone with internet
+        conection preview the drinks and promotions in a menu.
+      </p>
+      <p class="pb-2">
+        To the clients inside the beer house have the posibility to make orders
+        avoiding the noises and enhance the eficiency.
+      </p>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        My role
+      </h1>
+      <ul class="list-disc w-10/12 mx-auto">
+        <li class="pb-1">I managed all the parts of the project</li>
+        <li class="pb-1">Doing users researchs</li>
+        <li class="pb-1">All the designs and documents of the project</li>
+        <li class="pb-1">Low and high fidelity prototypes</li>
+      </ul>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Project Goal
+      </h1>
+      <p class="">
+        Design an app to preview online the outdoor Beer House's menu also
+        allows the users orders to their tables.
+      </p>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Emphatysing
+      </h1>
+      <h2 class="pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Pain points
+      </h2>
+      <h3 class="font-bold">Insegurity</h3>
+      <p class="pb-4">
+        Some users has seen under-age persons drinking alcoholic beverages
+      </p>
+      <h3 class="font-bold">Comfort</h3>
+      <p class="pb-4">
+        The most want preview which products can ordered or there is promotions
+        without need leaving home
+      </p>
+      <h3 class="font-bold">Accesibility</h3>
+      <p class="pb-4">
+        It should solve the posible mistakes to do easier the comunication and
+        movement
       </p>
       <img
-        src="../public/img/brshp-digital-wireframe.jpg"
-        class="img-big"
-        alt="a lot of digital wireframes"
+        src="../public/img/brshp-christine.png"
+        class="pb-2"
+        alt="persona christine alvarez description"
+        loading="lazy"
       />
-      <figcaption class="readable paragraph">
-        This was my first digital advance, that is to say this is the first that
-        a developer team can be a reality with a database and more, so happy to
-        see a desing and all him potential
-      </figcaption>
-    </figure>
-    <h1 class="title-green">First prototype</h1>
-    <img
-      src="../public/img/brshp-digital-proto.jpg"
-      class="img-big"
-      alt="digital sticky notes with negative notes"
-    />
-    <p class="readable paragraph">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil
-      iste amet cupiditate mollitia porro omnis temporibus dolore alias at
-      inventore incidunt neque, doloremque dolorum earum facilis praesentium
-      similique sit?
-    </p>
-    <video
-      src="../public/video/brshp9.mp4"
-      class="video-vertical"
-      alt="Interacting with this app version"
-      controls
-      autoplay
-      playsinline
-      muted
-      loop
-    ></video>
-    <a
-      href="https://www.figma.com/proto/eF2a3OFtJOIdjCV5FQrXex/Curso-4-semana-4?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2"
-      class="ref button size-hover"
-      title="The 1st prototype that i made"
-      target="_blank"
-    >
-      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      My fisrt prototype
-    </a>
-    <h1 class="title-green">Test in users</h1>
-    <div class="disclaimer">
-      This project was execute inside a course of UX desing from Google, i did
-      not a test with real people, most feedback was supose 🥲
-    </div>
-    <h2 class="subtitle1 paragraph">Planning the study</h2>
-    <p class="readable paragraph">
-      I heared the term "usability study" to get feedback profesionally and then
-      i decided to learn about that theme and there is when i seen what is that
-      i needed until that moment, until that part of the process
-    </p>
-    <p class="readable paragraph">
-      This concist of planning, conduct the study, organize deta and sintesize
-      it, altough for time reasons i don't conducted it with real people
-    </p>
-    <h2 class="subtitle2 paragraph">Getting feedback</h2>
-    <figure>
       <img
-        src="../public/img/brshp-feedback1.png"
-        class="img-small"
-        alt="digital sticky notes with possitive notes"
+        src="../public/img/brshp-eleuterio.png"
+        class=""
+        alt="persona eleuterio flores description"
+        loading="lazy"
       />
-      <figcaption class="readable paragraph">
-        After each interview i did write a few of quotes from users
-      </figcaption>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        User journey
+      </h2>
       <img
-        src="../public/img/brshp-feedback2.png"
-        class="img-small"
+        src="../public/img/brshp-user-journey.png"
+        class=""
+        alt="User journey table"
+        loading="lazy"
+      />
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        User story
+      </h2>
+      <img
+        src="../public/img/brshp-user-story.png"
+        class=""
+        alt="Little paper comic of the user using the app"
+        loading="lazy"
+      />
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Principal constraints
+      </h1>
+      <ul class="list-disc w-10/12 mx-auto">
+        <li class="pb-2">The beer house need more eficiency</li>
+        <li class="pb-2">
+          Make it more safe to the clients while they orders watching the online
+          menu
+        </li>
+      </ul>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Desing strategy
+      </h1>
+      <h2 class="pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        User flow
+      </h2>
+      <img
+        src="../public/img/brshp-user-flow.png"
+        class="pb-2"
+        alt="Digital diagram of the user flow"
+      />
+      <p class="pb-10">
+        I did first a set of speed digital wireframes as a speed test, to see
+        how looks it
+      </p>
+      <figure>
+        <img
+          src="../public/img/brshp6.png"
+          class="pb-2"
+          alt="paper wireframes with 3 screen versions"
+          loading="lazy"
+        />
+        <figcaption class="pb-10">
+          I thinked which elements should have each sceen? to star to draw it,
+          in that moment i was very confident with my wireframes but almost all
+          will be modified.
+        </figcaption>
+        <img
+          src="../public/img/brshp7.png"
+          class="pb-2"
+          alt="paper wireframes with 3 screen versions"
+          loading="lazy"
+        />
+        <figcaption class="pb-10">
+          Here we can see diferent versions of each screen and how i complement
+          the best parts
+        </figcaption>
+        <figcaption class="pb-1">
+          After i improve that few screens and add more components always with
+          the user flow in mind
+        </figcaption>
+        <img
+          src="../public/img/brshp-digital-wireframe.jpg"
+          class="pb-2"
+          alt="a lot of digital wireframes"
+        />
+        <figcaption class="">
+          This was my first digital advance, that is to say this is the first
+          that a developer team can be a reality with a database and more, so
+          happy to see a desing and all him potential
+        </figcaption>
+      </figure>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        First prototype
+      </h1>
+      <img
+        src="../public/img/brshp-digital-proto.jpg"
+        class="pb-2"
         alt="digital sticky notes with negative notes"
       />
-      <figcaption class="readable paragraph">
-        The purpose of this is get honest feedback, either good or bad
-      </figcaption>
-    </figure>
-    <h3 class="subtitle2 paragraph">Synthetizing data</h3>
-    <p class="readable paragraph">
-      The users's opinion is important but some actions to take are more than
-      the others, for this reason i decided to order all in this way.
-    </p>
-    <h3 class="paragraph bold">Priority 0</h3>
-    <ul class="list">
-      <li class="readable">
-        Based on theme "payment is confusing" an action to take is redesign the
-        app's payment system
-      </li>
-      <li class="readable">
-        Based on theme "some disability could prevent to use the app" and an
-        action to take is enhance the app's accesibility
-      </li>
-    </ul>
-    <h3 class="paragraph bold">Priority 1</h3>
-    <ul class="list">
-      <li class="readable">
-        Based on theme "the participants wants to insert data in a more
-        intuitive way" and an action to take is redesign the entry of data
-      </li>
-    </ul>
-    <h1 class="title-green">Results</h1>
-    <h2 class="subtitle1">Research insights 2</h2>
-    <p class="readable paragraph">
-      I made a study from the first wireframes round to the second round, and
-      another from the second round to the high fidelity prototype
-    </p>
-    <ol class="list">
-      <li class="readable">
-        Users wants to interact with a configuration system
-      </li>
-      <li class="readable">
-        App need to work correctly whatever that hand carry the device
-      </li>
-    </ol>
-    <h2 class="subtitle1">High fidelity prototype</h2>
-    <video
-      src="../public/video/brshp13.mp4"
-      class="video-vertical"
-      alt="Last prototype version working"
-      controls
-      autostart
-      muted
-      playsinline
-      loop
-    ></video>
-    <a
-      href="https://www.figma.com/proto/ecY2ayHDgZvZUlTQq0aAWQ/semana-6-curso-5?scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A94&node-id=3%3A94"
-      class="ref button size-hover"
-      title="See this interactive prototype"
-      target="_blank"
-    >
-      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      Pulled prototype
-    </a>
-    <h1 class="title-green">Next steps</h1>
-    <ul class="list py-5">
-      <li class="readable">
-        How i also have knowledge in engineer i will help so much to the develop
-        team to do the designs a reality.
-      </li>
-      <li class="readable">
-        Quiz the users that complete the ordering process to interpret how was
-        their experience and then sintesize that feedback.
-      </li>
-    </ul>
-    <h1 class="title-green">What i learned</h1>
-    <p class="readable paragraph">
-      At the begin i learned to put me in they with all de users, not only with
-      the we knows use digital devices.
-    </p>
-    <p class="readable paragraph">
-      Learned that a good design made to size, redesigning distinct parts many
-      times make it better and better. Design is an iterative process.
-    </p>
-    <footer class="footer">
-      <div class="grid">
-        <h1 class="grid-title font-code">Contact me by here!</h1>
-        <section class="grid-square">
-          <i class="fa-solid fa-envelope-circle-check big-icon"></i>
-          <p class="readable">
-            zelmo0018@gmail.com
-            <br />
-            vsergiojared@gmail.com
-          </p>
-        </section>
-        <section class="grid-square">
-          <i class="fa-brands fa-whatsapp big-icon"></i>
-          <p class="readable">+51 27 41 35 84 51</p>
-        </section>
-      </div>
-      <a href="#up" class="ref button size-hover" title="Scroll to up">
-        <i class="fa-solid fa-arrow-up"></i>
+      <p class="pb-10">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nihil
+        iste amet cupiditate mollitia porro omnis temporibus dolore alias at
+        inventore incidunt neque, doloremque dolorum earum facilis praesentium
+        similique sit?
+      </p>
+      <video
+        src="../public/video/brshp9.mp4"
+        class="w-6/12 sm:w-4/12 mx-auto pb-4"
+        alt="Interacting with this app version"
+        controls
+        autoplay
+        playsinline
+        muted
+        loop
+      ></video>
+      <a
+        href="https://www.figma.com/proto/eF2a3OFtJOIdjCV5FQrXex/Curso-4-semana-4?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2"
+        class="text-term relative after:bg-term after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-150 cursor-pointer"
+        title="The 1st prototype that i made"
+        target="_blank"
+      >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        My fisrt prototype
       </a>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Test in users
+      </h1>
+      <div class="p-2 bg-black-600 text-sm">
+        <span class="font-bold">Disclaimer:</span> This project was execute
+        inside a course of UX Desing from Google Career, I didn't tests with
+        real people, most feedback was supossed
+      </div>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Planning the study
+      </h2>
+      <p class="pb-2">
+        I heared the term "usability study" to get feedback profesionally and
+        then i decided to learn about that theme and there is when i seen what
+        is that i needed until that moment, until that part of the process
+      </p>
+      <p class="pb-2">
+        This concist of planning, conduct the study, organize deta and sintesize
+        it, altough for time reasons i don't conducted it with real people
+      </p>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Getting feedback
+      </h2>
+      <figure>
+        <img
+          src="../public/img/brshp-feedback1.png"
+          class="pb-2"
+          alt="digital sticky notes with possitive notes"
+        />
+        <figcaption class="pb-10">
+          After each interview i did write a few of quotes from users
+        </figcaption>
+        <img
+          src="../public/img/brshp-feedback2.png"
+          class="pb-2"
+          alt="digital sticky notes with negative notes"
+        />
+        <figcaption class="pb-10">
+          The purpose of this is get honest feedback, either good or bad
+        </figcaption>
+      </figure>
+      <h3 class="font-bold">Synthetizing data</h3>
+      <p class="pb-4">
+        The users's opinion is important but some actions to take are more than
+        the others, for this reason i decided to order all in this way.
+      </p>
+      <h3 class="font-bold">Priority 0</h3>
+      <ul class="list-disc w-10/12 mx-auto">
+        <li class="pb-2">
+          Based on theme "payment is confusing" an action to take is redesign
+          the app's payment system
+        </li>
+        <li class="pb-4">
+          Based on theme "some disability could prevent to use the app" and an
+          action to take is enhance the app's accesibility
+        </li>
+      </ul>
+      <h3 class="font-bold">Priority 1</h3>
+      <ul class="list-disc w-10/12 mx-auto">
+        <li class="pb-4">
+          Based on theme "the participants wants to insert data in a more
+          intuitive way" and an action to take is redesign the entry of data
+        </li>
+      </ul>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Results
+      </h1>
+      <h2 class="pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Research insights 2
+      </h2>
+      <p class="pb-2">
+        I made a study from the first wireframes round to the second round, and
+        another from the second round to the high fidelity prototype
+      </p>
+      <ol class="list-disc w-10/12 mx-auto">
+        <li class="pb-2">
+          Users wants to interact with a configuration system
+        </li>
+        <li class="pb-2">
+          App need to work correctly whatever that hand carry the device
+        </li>
+      </ol>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        High fidelity prototype
+      </h2>
+      <video
+        src="../public/video/brshp13.mp4"
+        class="w-6/12 sm:w-4/12 mx-auto pb-4"
+        alt="Last prototype version working"
+        controls
+        autostart
+        muted
+        playsinline
+        loop
+      ></video>
+      <a
+        href="https://www.figma.com/proto/ecY2ayHDgZvZUlTQq0aAWQ/semana-6-curso-5?scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A94&node-id=3%3A94"
+        class="text-term relative after:bg-term after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-150 cursor-pointer"
+        title="See this interactive prototype"
+        target="_blank"
+      >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        Improved prototype
+      </a>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Next steps
+      </h1>
+      <ul class="list-disc w-10/12 mx-auto">
+        <li class="pb-2">
+          How i also have knowledge in engineer i will help so much to the
+          develop team to do the designs a reality.
+        </li>
+        <li class="pb-2">
+          Quiz the users that complete the ordering process to interpret how was
+          their experience and then sintesize that feedback.
+        </li>
+      </ul>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        What i learned
+      </h1>
+      <p class="pb-2">
+        At the begin i learned to put me in they with all de users, not only
+        with the we knows use digital devices.
+      </p>
+      <p class="pb-20">
+        Learned that a good design made to size, redesigning distinct parts many
+        times make it better and better. Design is an iterative process.
+      </p>
+    </main>
+    <footer class="flex flex-col justify-center bg-radial pb-52">
+      <nav class="pb-20 flex font-semibold text-xl w-fit mx-auto">
+        <a
+          href="https://www.linkedin.com/in/sergio-jared-valencia-cortaza-806551253/"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My LinkedIn profile"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin m-1"></i>
+        </a>
+        <a
+          href="https://github.com/zelmo-ingeniero"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My github profile"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github m-1"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/sergiojared.valencia.3"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My Facebook profile"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook m-1"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCZDzVVdgyy7Da0v6GCqQC5w"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My YouTube videos"
+          target="_blank"
+        >
+          <i class="fa-brands fa-youtube m-1"></i>
+        </a>
+        <a
+          href="https://www.kaggle.com/sergiojaredvalencia"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My Kaggle notebooks"
+          target="_blank"
+        >
+          <i class="fa-brands fa-kaggle m-1"></i>
+        </a>
+      </nav>
+      <a
+        class="w-fit mx-auto text-term relative after:bg-term after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-150 cursor-pointer"
+        href="mailto:zelmo0018@gmail.com"
+        id="mail_1"
+      >
+        <i class="fa-solid fa-paper-plane"></i>
+        Send me an email
+      </a>
+      <p class="text-center">or</p>
+      <button
+        id="zelmo0018@gmail.com"
+        class="w-fit mx-auto text-term relative hover:text-green-100 mb-20"
+        onclick="copyToClipboard('zelmo0018@gmail.com')"
+      >
+        <i class="fa-solid fa-copy"></i>
+        Copy email
+      </button>
+      <a
+        href="#up"
+        class="text-lg w-fit mx-auto font-bold text-term relative after:bg-term after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-150 cursor-pointer"
+        title="Scroll to up"
+      >
+        Back to top
+        <i class="fa-solid fa-arrow-up pl-1"></i>
+      </a>
+      <span id="toast" class="toast"></span>
     </footer>
   </body>
 </html>
