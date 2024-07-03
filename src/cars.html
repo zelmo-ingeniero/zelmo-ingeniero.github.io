@@ -1,253 +1,363 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zelmo | Project</title>
+    <title>Sergio Jared project</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="index.js"></script>
   </head>
-  <body class="body bg-gray">
+  <body
+    class="bg-black-800 text-green-200 selection:bg-term selection:text-black-950"
+  >
     <a id="up"></a>
-    <nav class="bar">
-      <a href="index.html" class="bar-button ref" title="Return to home">
-        <i class="fa-solid fa-arrow-left bg-none"></i>
-        Home
-      </a>
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 flex backdrop-blur opacity-90 p-2"
+    >
       <a
-        href="about.html"
-        class="bar-button ref"
-        title="Go to see more about me"
-        >About me</a
+        href="../index.html"
+        class="px-4 font-bold text-green-300 hover:text-white hover:underline"
+        title="Return to home"
       >
-    </nav>
-    <h1 class="title-green">UX design process for a mechanical service</h1>
-    <p class="readable paragraph">
-      <b>SJVC Mecanics</b> was a website that offer a fast automovilistic
-      diagnostic approximate inserting a few or nothing of car's information
-    </p>
-    <h1 class="title-green">My role</h1>
-    <p class="readable paragraph">
-      I was the UX researcher and UX designer, i did so many emphatizations and
-      definitions, all the designs and prototypes in diferent size screens
-    </p>
-    <h1 class="title-green">Project Goal</h1>
-    <p class="readable paragraph">
-      Desing a service, a fast and approximate way to get a automovilistic
-      diagnostic to they without knowledge about the theme
-    </p>
-    <h1 class="title-green">Emphatysing</h1>
-    <h2 class="subtitle1">Users pain points</h2>
-    <h3 class="subtitle2 paragraph">Experience</h3>
-    <p class="readable paragraph">
-      There is not a website of automovilistic diagnostic yet that have the
-      functionality of answar questions to get a posible cause or reason
-    </p>
-    <h3 class="subtitle2 paragraph">Updating</h3>
-    <p class="readable paragraph">
-      The most of car websites tend to be old or they use obsolet technologies
-      and designs that aren't supported by all browsers and devices
-    </p>
-    <h3 class="subtitle2 paragraph">Time</h3>
-    <p class="readable paragraph">
-      In the finding of solutions on the web you'll see a variety of information
-      sources and sites, is slow to the users read and process all that
-      information
-    </p>
-    <h3 class="subtitle2 paragraph">Language</h3>
-    <p class="readable paragraph">
-      The automobile websites seems diricted to mechanics instead of designed to
-      the car's owner that unknown so many typical terms
-    </p>
-    <img
-      src="../public/img/crs-cristobal-marcos.png"
-      class="img-big"
-      alt="Person cristobal marcos description"
-      loading="lazy"
-    />
-    <h1 class="title-green">Principal constraints</h1>
-    <ul class="list">
-      <li class="readable">Real world diagnostic are so expensive</li>
-      <li class="readable">
-        Need to hace an intermediate (some times advanced) knowledge of their
-        automobile and it's components
-      </li>
-    </ul>
-    <h1 class="title-green">Desing strategy</h1>
-    <h2 class="subtitle1">Site map</h2>
-    <img
-      src="../public/img/crs-sitemap.png"
-      class="img-big"
-      alt="horizontal sitemap, like a process"
-    />
-    <p class="readable paragraph">
-      I begin to create distinct versions of each principal page, to get
-      practice i try to use desktop-first filosophy
-    </p>
-    <figure class="figure">
-      <img
-        src="../public/img/crs3.png"
-        class="figure-img"
-        alt="PC screen in paper wireframe 1"
-        loading="lazy"
-      />
-      <img
-        src="../public/img/crs4.png"
-        class="figure-img"
-        alt="PC screen in paper wireframe 2"
-        loading="lazy"
-      />
-      <img
-        src="../public/img/crs5.png"
-        class="figure-img"
-        alt="PC screen in paper wireframe 3"
-        loading="lazy"
-      />
-      <img
-        src="../public/img/crs6.png"
-        class="figure-img"
-        alt="PC screen in paper wireframe 4"
-        loading="lazy"
-      />
-      <figcaption class="readable">
-        I had very versions to each page and with those components combined a
-        pulled version from the * marked parts
-      </figcaption>
-    </figure>
-    <h2 class="subtitle1">Digital wireframes</h2>
-    <figure>
-      <img
-        src="../public/img/crs7.png"
-        class="img-small"
-        alt="PC and mobile screens comparison with wireframes"
-      />
-      <img
-        src="../public/img/crs8.png"
-        class="img-big"
-        alt="PC and mobile screens comparison with wireframes"
-      />
-      <figcaption class="readable paragraph">
-        At this part i added the mobile version, i didn't before because prefer
-        the digital wireframing versus the paper wireframing
-      </figcaption>
-    </figure>
-    <h1 class="title-green">Prototyping</h1>
-    <video
-      src="../public/video/crs9.mp4"
-      class="video-horizontal"
-      alt="Interacting with the PC and mobile version of this prototype"
-      controls
-      autoplay
-      muted
-      playsinline
-      loop
-    ></video>
-    <a
-      href="https://www.figma.com/proto/ubRt2oiZ9w5AhxSRfqs3P6/primer-prototipo?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1"
-      class="ref button size-hover"
-      title="Watch it yourself with this interactive prototype"
-      target="_blank"
-    >
-      <i class="fa-solid fa-arrow-up-right-from-square bg-none"></i>
-      First prototype
-    </a>
-    <h1 class="title-green">Test in users</h1>
-    <div class="disclaimer">
-      <b>Disclaimer:</b> This project was execute inside a course of UX Desing
-      from Google Career, I did not a test with real people, most feedback was
-      supose 🥲
-    </div>
-    <h2 class="subtitle1">Planning the study</h2>
-    <p class="readable paragraph">
-      To advance from one design to another better inside the same project i
-      like to plan a usability study to know what see other than me no.
-    </p>
-    <h3 class="subtitle2 paragraph">Study goal</h3>
-    <p class="readable paragraph">
-      Firstly about what need the user, what is better for all if there is not
-      something necesary
-    </p>
-    <h3 class="subtitle2 paragraph">Interview script</h3>
-    <p class="readable paragraph">
-      it's made up of an introduction, ice breaking, task with distict
-      alternatives and final conclusions / questions.
-    </p>
-    <p class="readable paragraph">
-      Here is the place to a big specification to practice the tasks and
-      questions that i will do.
-    </p>
-    <h1 class="title-green">Results</h1>
-    <h2 class="subtitle1">Research insights</h2>
-    <h3 class="subtitle2 paragraph">Selecting auto</h3>
-    <p class="readable paragraph">
-      Users needs a better explanatiuon to next steps
-    </p>
-    <h3 class="subtitle2 paragraph">Questions</h3>
-    <p class="readable paragraph">
-      Users needs to insert data in a more intuitively way
-    </p>
-    <h3 class="subtitle2 paragraph">Buttons</h3>
-    <p class="readable paragraph">
-      Users needs to read a accesible language and easy to understand
-    </p>
-    <h2 class="subtitle1">Final prototype</h2>
-    <img
-      src="../public/img/crs-isometric-view.png"
-      class="w-100"
-      alt="Isometric view of a lot of app's screens"
-    />
-    <a
-      href="https://www.figma.com/proto/u98hsLsLBRofSE8wAOlp5m/SJVC-mecanicos-ds5?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A4&show-proto-sidebar=1&node-id=2%3A4"
-      class="ref button size-hover"
-      title="Watch yourself this interactive website"
-      target="_blank"
-    >
-      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      See final prototype
-    </a>
-    <h2 class="subtitle1">Next steps</h2>
-    <ol class="list py-5">
-      <li class="readable">
-        Make user accounts to can continuing with a chat to they that describes
-        their specific problem with our experts
-      </li>
-      <li class="readable">
-        Finish the desings to the mobile responsive version
-      </li>
-      <li class="readable">
-        Get an agree with the mechanic team to start make all possible questions
-        and diagnostic results.
-      </li>
-    </ol>
-    <h1 class="title-green">What i learned</h1>
-    <p class="readable paragraph">
-      Put coordinates and distances in a more suitable between the elements.
-      Make interactiver prototypes. I now can take advantge of the assets panel
-    </p>
-    <footer class="footer">
-      <div class="grid">
-        <h1 class="grid-title font-code">Contact me by here!</h1>
-        <section class="grid-square">
-          <i class="fa-solid fa-envelope-circle-check big-icon"></i>
-          <p class="readable">
-            zelmo0018@gmail.com
-            <br />
-            vsergiojared@gmail.com
-          </p>
-        </section>
-        <section class="grid-square">
-          <i class="fa-brands fa-whatsapp big-icon"></i>
-          <p class="readable">+51 27 41 35 84 51</p>
-        </section>
-      </div>
-      <a href="#up" class="ref button size-hover" title="Scroll to up">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-left mr-2"></i>
+        Go back
       </a>
+    </nav>
+    <main class="w-11/12 mx-auto sm:container">
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        UX design process for a mechanical service
+      </h1>
+      <p class="">
+        <span class="font-bold">SJVC Mecanics</span> was a website that offer a
+        fast automovilistic diagnostic approximate inserting a few or nothing of
+        car's information
+      </p>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        My role
+      </h1>
+      <p class="">
+        I was the UX researcher and UX designer, i did so many emphatizations
+        and definitions, all the designs and prototypes in diferent size screens
+      </p>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Project Goal
+      </h1>
+      <p class="">
+        Desing a service, a fast and approximate way to get a automovilistic
+        diagnostic to they without knowledge about the theme
+      </p>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Emphatysing
+      </h1>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Users pain points
+      </h2>
+      <h3 class="font-bold">Experience</h3>
+      <p class="pb-4">
+        There is not a website of automovilistic diagnostic yet that have the
+        functionality of answar questions to get a posible cause or reason
+      </p>
+      <h3 class="font-bold">Updating</h3>
+      <p class="pb-4">
+        The most of car websites tend to be old or they use obsolet technologies
+        and designs that aren't supported by all browsers and devices
+      </p>
+      <h3 class="font-bold">Time</h3>
+      <p class="pb-4">
+        In the finding of solutions on the web you'll see a variety of
+        information sources and sites, is slow to the users read and process all
+        that information
+      </p>
+      <h3 class="font-bold">Language</h3>
+      <p class="pb-10">
+        The automobile websites seems diricted to mechanics instead of designed
+        to the car's owner that unknown so many typical terms
+      </p>
+      <img
+        src="../public/img/crs-cristobal-marcos.png"
+        class=""
+        alt="Person cristobal marcos description"
+        loading="lazy"
+      />
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Principal constraints
+      </h1>
+      <ul class="list-disc w-10/12 mx-auto">
+        <li class="pb-2">Real world diagnostic are so expensive</li>
+        <li class="">
+          Need to hace an intermediate (some times advanced) knowledge of their
+          automobile and it's components
+        </li>
+      </ul>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Desing strategy
+      </h1>
+      <h2 class="pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Site map
+      </h2>
+      <img
+        src="../public/img/crs-sitemap.png"
+        class="pb-2"
+        alt="horizontal sitemap, like a process"
+      />
+      <p class="pb-10">
+        I begin to create distinct versions of each principal page, to get
+        practice i try to use desktop-first filosophy
+      </p>
+      <figure class="flex flex-wrap justify-around pb-2">
+        <img
+          src="../public/img/crs3.png"
+          class="w-5/12 p-0.5 sm:w-4/12 md:w-3/12"
+          alt="PC screen in paper wireframe 1"
+          loading="lazy"
+        />
+        <img
+          src="../public/img/crs4.png"
+          class="w-5/12 p-0.5 sm:w-4/12 md:w-3/12"
+          alt="PC screen in paper wireframe 2"
+          loading="lazy"
+        />
+        <img
+          src="../public/img/crs5.png"
+          class="w-5/12 p-0.5 sm:w-4/12 md:w-3/12"
+          alt="PC screen in paper wireframe 3"
+          loading="lazy"
+        />
+        <img
+          src="../public/img/crs6.png"
+          class="w-5/12 p-0.5 sm:w-4/12 md:w-3/12"
+          alt="PC screen in paper wireframe 4"
+          loading="lazy"
+        />
+        <figcaption class="">
+          I had very versions to each page and with those components combined a
+          pulled version from the * marked parts
+        </figcaption>
+      </figure>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Digital wireframes
+      </h2>
+      <figure>
+        <img
+          src="../public/img/crs7.png"
+          class="w-10/12 mx-auto pb-2"
+          alt="PC and mobile screens comparison with wireframes"
+        />
+        <img
+          src="../public/img/crs8.png"
+          class="pb-2"
+          alt="PC and mobile screens comparison with wireframes"
+        />
+        <figcaption class="">
+          At this part i added the mobile version, i didn't before because
+          prefer the digital wireframing versus the paper wireframing
+        </figcaption>
+      </figure>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Prototyping
+      </h1>
+      <video
+        src="../public/video/crs9.mp4"
+        class="pb-4"
+        alt="Interacting with the PC and mobile version of this prototype"
+        controls
+        autoplay
+        muted
+        playsinline
+        loop
+      ></video>
+      <a
+        href="https://www.figma.com/proto/ubRt2oiZ9w5AhxSRfqs3P6/primer-prototipo?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1"
+        class="text-term relative after:bg-term after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-150 cursor-pointer"
+        title="Watch it yourself with this interactive prototype"
+        target="_blank"
+      >
+        <i class="fa-solid fa-arrow-up-right-from-square bg-none"></i>
+        First prototype
+      </a>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Test in users
+      </h1>
+      <div class="p-2 bg-black-600 text-sm">
+        <span class="font-bold">Disclaimer:</span> This project was execute inside a course of UX Desing
+        from Google Career, I didn't tests with real people, most feedback was
+        supossed
+      </div>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Planning the study
+      </h2>
+      <p class="pb-4">
+        To advance from one design to another better inside the same project i
+        like to plan a usability study to know what see other than me no.
+      </p>
+      <h3 class="font-bold">Study goal</h3>
+      <p class="pb-4">
+        Firstly about what need the user, what is better for all if there is not
+        something necesary
+      </p>
+      <h3 class="font-bold">Interview script</h3>
+      <p class="pb-2">
+        it's made up of an introduction, ice breaking, task with distict
+        alternatives and final conclusions / questions.
+      </p>
+      <p class="pb-4">
+        Here is the place to a big specification to practice the tasks and
+        questions that i will do.
+      </p>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        Results
+      </h1>
+      <h2 class="pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Research insights
+      </h2>
+      <h3 class="font-bold">Selecting auto</h3>
+      <p class="pb-4">
+        Users needs a better explanatiuon to next steps
+      </p>
+      <h3 class="font-bold">Questions</h3>
+      <p class="pb-4">
+        Users needs to insert data in a more intuitively way
+      </p>
+      <h3 class="font-bold">Buttons</h3>
+      <p class="pb-4">
+        Users needs to read a accesible language and easy to understand
+      </p>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Final prototype
+      </h2>
+      <img
+        src="../public/img/crs-isometric-view.png"
+        class="pb-4"
+        alt="Isometric view of a lot of app's screens"
+      />
+      <a
+        href="https://www.figma.com/proto/u98hsLsLBRofSE8wAOlp5m/SJVC-mecanicos-ds5?scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A4&show-proto-sidebar=1&node-id=2%3A4"
+        class="text-term relative after:bg-term after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-150 cursor-pointer"
+        title="Watch yourself this interactive website"
+        target="_blank"
+      >
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        See final prototype
+      </a>
+      <h2 class="pt-10 pb-2 text-xl font-bold font-mono sm:w-10/12 sm:mx-auto">
+        Next steps
+      </h2>
+      <ol class="list-disc w-10/12 mx-auto">
+        <li class="pb-4">
+          Make user accounts to can continuing with a chat to they that
+          describes their specific problem with our experts
+        </li>
+        <li class="pb-4">
+          Finish the desings to the mobile responsive version
+        </li>
+        <li class="pb-4">
+          Get an agree with the mechanic team to start make all possible
+          questions and diagnostic results.
+        </li>
+      </ol>
+      <h1
+        class="px-2 pt-12 pb-4 text-4xl font-bold font-mono text-term sm:w-10/12 sm:mx-auto"
+      >
+        What i learned
+      </h1>
+      <p class="pb-20">
+        Put coordinates and distances in a more suitable between the elements.
+        Make interactiver prototypes. I now can take advantge of the assets
+        panel
+      </p>
+    </main>
+    <footer class="flex flex-col justify-center bg-radial pb-52">
+      <nav class="pb-20 flex font-semibold text-xl w-fit mx-auto">
+        <a
+          href="https://www.linkedin.com/in/sergio-jared-valencia-cortaza-806551253/"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My LinkedIn profile"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin m-1"></i>
+        </a>
+        <a
+          href="https://github.com/zelmo-ingeniero"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My github profile"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github m-1"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/sergiojared.valencia.3"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My Facebook profile"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook m-1"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCZDzVVdgyy7Da0v6GCqQC5w"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My YouTube videos"
+          target="_blank"
+        >
+          <i class="fa-brands fa-youtube m-1"></i>
+        </a>
+        <a
+          href="https://www.kaggle.com/sergiojaredvalencia"
+          class="mx-2 flex items-center hover:text-green-100 sm:hover:underline"
+          title="My Kaggle notebooks"
+          target="_blank"
+        >
+          <i class="fa-brands fa-kaggle m-1"></i>
+        </a>
+      </nav>
+      <a
+        class="w-fit mx-auto text-term relative after:bg-term after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-150 cursor-pointer"
+        href="mailto:zelmo0018@gmail.com"
+        id="mail_1"
+      >
+        <i class="fa-solid fa-paper-plane"></i>
+        Send me an email
+      </a>
+      <p class="text-center">or</p>
+      <button
+        id="zelmo0018@gmail.com"
+        class="w-fit mx-auto text-term relative hover:text-green-100 mb-20"
+        onclick="copyToClipboard('zelmo0018@gmail.com')"
+      >
+        <i class="fa-solid fa-copy"></i>
+        Copy email
+      </button>
+      <a
+        href="#up"
+        class="text-lg w-fit mx-auto font-bold text-term relative after:bg-term after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-150 cursor-pointer"
+        title="Scroll to up"
+      >
+        Back to top
+        <i class="fa-solid fa-arrow-up pl-1"></i>
+      </a>
+      <span id="toast" class="toast"></span>
     </footer>
   </body>
 </html>
