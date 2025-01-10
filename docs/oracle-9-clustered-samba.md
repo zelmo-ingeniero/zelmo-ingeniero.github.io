@@ -1,11 +1,12 @@
+
 # Clustered shared filesystem on Oracle Linux
 
 ## Prerequisites
 
-* Oracle Minimal-install Release 9.3 in all nodes
-* All nodes should have network connectivity between them (ports 139, 445-, 3260, 7777)
-* Each node has their own hostname
-* Have 1 "shared disk" that will have the same content in all nodes and will have mounted within an OCFS2 filesystem (in this case is shared by using ISCSI)
+- Oracle Minimal-install Release 9.3 in all nodes
+- All nodes should have network connectivity between them (ports 139, 445-, 3260, 7777)
+- Each node has their own hostname
+- Have 1 "shared disk" that will have the same content in all nodes and will have mounted within an OCFS2 filesystem (in this case is shared by using ISCSI)
 
 ```bash
 sudo su -
@@ -201,21 +202,21 @@ Only in one node create the clustered FS with `mkfs.ocfs2`
 mkfs.ocfs2 --cluster-stack=o2cb --cluster-name=mycluster --global-heartbeat --fs-feature-level=max-features -C 8K -N 3 -T vmstore -L ocfs-shared /dev/sda
 ```
 
-* `--cluster-stack=o2cb`, `--cluster-name=<cluster name>` and `--global-heartbeat` are required by the *global heartbeat* mode
-* `--fs-feature-level=max-features` all current and legacy features
-* `-N` quantity of nodes where it will be able to mount
-* `-T vmstore` type that can be changed to `database` or `mail`
-* `-L` the OCFS2 name or label
-* `/dev/sda` the disk that will be shared
-* `-C` the cluster size according to the disk size might be:
+- `--cluster-stack=o2cb`, `--cluster-name=<cluster name>` and `--global-heartbeat` are required by the *global heartbeat* mode
+- `--fs-feature-level=max-features` all current and legacy features
+- `-N` quantity of nodes where it will be able to mount
+- `-T vmstore` type that can be changed to `database` or `mail`
+- `-L` the OCFS2 name or label
+- `/dev/sda` the disk that will be shared
+- `-C` the cluster size according to the disk size might be:
 
 | File System Size | Suggested Minimum Cluster Size |
 |------------------|--------------------------------|
-| 1 GB   - 10 GB   | -C 8K                             |
-| 10GB   - 100 GB  | -C 16K                            |
-| 100 GB - 1 TB    | -C 32K                            |
-| 1 TB   - 10 TB   | -C 64K                            |
-| 10 TB  - 16 TB   | -C 128K                           |
+| 1 GB   - 10 GB   | -C 8K                          |
+| 10GB   - 100 GB  | -C 16K                         |
+| 100 GB - 1 TB    | -C 32K                         |
+| 1 TB   - 10 TB   | -C 64K                         |
+| 10 TB  - 16 TB   | -C 128K                        |
 
 Once created the OCFS2 filesystem in the shared disk, add the *global heartbeat* in the same node (in my case the disk path is `/dev/sda` provided by iscsi)
 
@@ -490,15 +491,9 @@ Remember that the  cluster cannot be restarted or stopped if the filesystem is m
 
 Therefore to edit the file `/etc/ocfs2/cluste.conf` before must be unmounted the filesystem and once it is unmounted in all nodes the cluster can be stopped or restarted
 
-* Umount FS `umount /mnt/shared`
-* Only if neccesary destroy the FS `wipefs -a /dev/sda` and recreate it
-* Stop cluster in all nodes `/sbin/o2cb.init stop`
-* Update cluster.conf file in all nodes (update also the heartbeat region with: `o2cb remove-heartbeat mycluster /dev/sda` and `o2cb add-heartbeat mycluster /dev/sda`)
-* Restart cluster in all nodes `/sbin/o2cb.init start`
-* Mount new FS in all nodes
-
-## Notes for me
-
-* Create 1 VM with 1 extra hard disk (I tried with the  ISCSI type and didn't work)
-
-* Oracle Minimal-install
+- Umount FS `umount /mnt/shared`
+- Only if neccesary destroy the FS `wipefs -a /dev/sda` and recreate it
+- Stop cluster in all nodes `/sbin/o2cb.init stop`
+- Update cluster.conf file in all nodes (update also the heartbeat region with: `o2cb remove-heartbeat mycluster /dev/sda` and `o2cb add-heartbeat mycluster /dev/sda`)
+- Restart cluster in all nodes `/sbin/o2cb.init start`
+- Mount new FS in all nodes
