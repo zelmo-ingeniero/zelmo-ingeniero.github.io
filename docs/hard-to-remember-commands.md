@@ -59,6 +59,42 @@ A for bucle that from 1 to 100000 write the iteration number at the end of the f
 for i in $(seq 1 100000); do echo $i >> tmp.log; done &
 ```
 
+## To do a merge or rebase in github
+
+Locate in the desired branch
+
+```bash
+git chekout main
+```
+
+Pull changes from others
+
+```bash
+git pull origin main
+```
+
+Pull changes from a branch (`develop` in this case)
+
+```bash
+git rebase develop
+```
+
+> ![INFO]
+> This is the best moment to manually remove or rename files if necessary
+
+Save changes
+
+```bash
+git commit -m ""
+```
+
+Apply changes
+
+```bash
+git push
+```
+
 # Windows command
 
 - Download a file using Windows Powershell `Invoke-WebRequest "https://ejemplo.com/archivo.zip" -OutFile "C:\ruta\donde\guardar\archivo.zip"`
+
