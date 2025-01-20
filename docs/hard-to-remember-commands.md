@@ -2,6 +2,7 @@
 
 ## System commands
 - The linux Kernel understand that run `sync; echo 3 > /proc/sys/vm/drop_caches` represent the cleaning of the cache
+- Remove files in /var/yum/cache/ by running `yum clean all`
 - Destroy delete an unmounted  filesystem `wipefs -a /dev/xda`
 - Run `loadkeys us` and `localectl set-keymap us` to change the keyboard layout at OS level
 - Run `sudo passwd -e` to remove the password to the current user and then in the next login the current user shoould have to assign a new one
