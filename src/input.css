@@ -1,33 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+}
 
 @layer components {
   .bg-radial {
-    background: radial-gradient(
-      ellipse 80% 60% at 50% 70%,
-      hsl(122, 50%, 15%),
-      hsl(122, 50%, 10%) 20%,
-      transparent 70%
-    );
+    background: radial-gradient(ellipse 80% 60% at 50% 70%,
+        hsl(122, 50%, 15%),
+        hsl(122, 50%, 10%) 20%,
+        transparent 70%);
   }
+
   .blink {
-    @apply w-6 md:w-10 border-b-4 border-term;
+    /*@apply w-6 md:w-10 border-b-4 border-term;*/
+    @apply border-b-4;
     animation:
       blink 0.8s steps(2, end) infinite
       /* typing 1s steps(12, end) forwards; */
   }
+
   .toast {
-    @apply opacity-0 bg-black-200 fixed px-4 mx-auto w-fit flex justify-center bottom-4 inset-x-0 rounded font-thin text-sm sm:text-base;
+    @apply opacity-0 fixed mx-auto w-fit flex rounded-sm justify-center;
   }
+
   @keyframes typing {
     from {
       width: 0;
     }
+
     to {
       width: 100%;
     }
   }
+
   @keyframes blink {
     to {
       border: none;
