@@ -653,9 +653,6 @@
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
-  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -756,17 +753,12 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-b-4 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 4px;
-  }
-  .border-b-5 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 5px;
-  }
   .border-b-6 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 6px;
+  }
+  .border-gray {
+    border-color: var(--color-gray);
   }
   .border-green-500 {
     border-color: var(--color-green-500);
@@ -809,9 +801,6 @@
   }
   .p-0\.5 {
     padding: calc(var(--spacing) * 0.5);
-  }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -938,6 +927,14 @@
     --tw-font-weight: var(--font-weight-thin);
     font-weight: var(--font-weight-thin);
   }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
   .text-nowrap {
     text-wrap: nowrap;
   }
@@ -996,10 +993,6 @@
   .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .ease-in-out {
-    --tw-ease: var(--ease-in-out);
-    transition-timing-function: var(--ease-in-out);
   }
   .selection\:bg-term {
     & *::selection {
@@ -1154,6 +1147,16 @@
       width: calc(11/12 * 100%);
     }
   }
+  .sm\:w-12\/12 {
+    @media (width >= 40rem) {
+      width: calc(12/12 * 100%);
+    }
+  }
+  .sm\:w-full {
+    @media (width >= 40rem) {
+      width: 100%;
+    }
+  }
   .sm\:pt-28 {
     @media (width >= 40rem) {
       padding-top: calc(var(--spacing) * 28);
@@ -1208,6 +1211,11 @@
   .md\:w-10\/12 {
     @media (width >= 48rem) {
       width: calc(10/12 * 100%);
+    }
+  }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
     }
   }
   .md\:text-7xl {
@@ -1358,6 +1366,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -1436,10 +1448,6 @@
   inherits: false;
 }
 @property --tw-backdrop-sepia {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ease {
   syntax: "*";
   inherits: false;
 }
