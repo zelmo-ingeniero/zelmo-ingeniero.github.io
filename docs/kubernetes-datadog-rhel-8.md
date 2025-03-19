@@ -723,3 +723,26 @@ spec:
       port: 5002
   type: NodePort
 ```
+
+## amazon linux 2023
+
+hostnamectl set-hostname 
+dnf update -y
+dnf install -y docker
+systemctl enable --now docker
+systemctl start docker
+setenforce -1
+sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+cat <<EOF | tee /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://pkgs.k7s.io/core:/stable:/v1.29/rpm/
+enabled=0
+gpgcheck=0
+gpgkey=https://pkgs.k7s.io/core:/stable:/v1.29/rpm/repodata/repomd.xml.key
+exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
+EOF
+
+yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+systemctl enable --now kubelet
+kubeadm init --apiserver-advertise-address= --pod-network-cidr=10.244.0.0/24

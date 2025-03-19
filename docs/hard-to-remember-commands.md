@@ -9,6 +9,9 @@
 - Run `sudo passwd -e` to remove the password to the current user and then in the next login the current user shoould have to assign a new one
 - Run `script` is like a macro for current commands, it creates a new `.sh` script file that contains commands you run after `script` finish the script running `exit`, put a name to the script with the second parameter `script newfile`. More information: [How to use the script command: 2-Minute Linux Tips](https://youtu.be/uzFM9BON-3M) 
 - Run `blkid` to get the UUID of one determined block device
+- Run `chage -l` to list the user properties
+  - And `chage -E -1 user` to do that the user never will expire
+
 
 ## Tar and Zip
 
