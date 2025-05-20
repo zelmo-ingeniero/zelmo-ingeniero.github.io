@@ -11,7 +11,8 @@
 - Run `blkid` to get the UUID of one determined block device
 - Run `chage -l` to list the user properties
   - And `chage -E -1 user` to do that the user never will expire
-
+- Run `tcpdump -i ens192 port 17630` to use `tcpdump` to view raw network packages
+- Run `journalctl --vacuum-time=30d` to clean journal logs older than 30 days
 
 ## Tar and Zip
 
@@ -103,3 +104,8 @@ git push
 
 - Download a file using Windows Powershell `Invoke-WebRequest "https://ejemplo.com/archivo.zip" -OutFile "C:\ruta\donde\guardar\archivo.zip"`
 
+# Azure CLI
+
+- Add the last parameter `az login --use-device-code` and give access using the web browser
+- Show your current user with `az ad signed-in-user show`
+- Add current AKS cluster to `./kube/config` file by running `az aks get-credentials -g "rg-aks-exos-test" -n "cluster-aks-test-DD"`
