@@ -100,6 +100,19 @@ Apply changes
 git push
 ```
 
+## Free up space from docker
+
+```bash
+docker system prune -af --volumes
+```
+
+## Free up space from docker
+
+```bash
+cat << EOF | tee your_filename.txt
+EOF
+```
+
 # Windows command
 
 - Download a file using Windows Powershell `Invoke-WebRequest "https://ejemplo.com/archivo.zip" -OutFile "C:\ruta\donde\guardar\archivo.zip"`
