@@ -13,6 +13,7 @@
   - And `chage -E -1 user` to do that the user never will expire
 - Run `tcpdump -i ens192 port 17630` to use `tcpdump` to view raw network packages
 - Run `journalctl --vacuum-time=30d` to clean journal logs older than 30 days
+- Run `curl ifconfig.me` to know your current IP address
 
 ## Tar and Zip
 
