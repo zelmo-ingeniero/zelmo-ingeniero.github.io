@@ -66,6 +66,57 @@ A for bucle that from 1 to 100000 write the iteration number at the end of the f
 for i in $(seq 1 100000); do echo $i >> tmp.log; done &
 ```
 
+Generate random traffic script:
+
+```bash
+#!/usr/bin/env bash
+# traffic.sh — genera tráfico a localhost cambiando rutas cada 1s
+
+# Rutas "realistas" (al menos 5)
+paths=(
+  ""                # /
+  "users"
+  "login"
+  "intranet"
+  "api/orders"
+  "api/products"
+  "dashboard"
+  "reports/summary"
+  "health"
+)
+
+# (Opcional) varios User-Agents para variar un poco el tráfico
+user_agents=(
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+  "curl/8.5.0"
+  "PostmanRuntime/7.39.0"
+)
+
+echo "Generando tráfico hacia http://localhost ...  (Ctrl+C para salir)"
+trap 'echo; echo "Saliendo..."; exit 0' INT
+
+while :; do
+  # Elije una ruta al azar (puedes cambiarlo a round-robin si prefieres)
+  idx=$((RANDOM % ${#paths[@]}))
+  path="${paths[$idx]}"
+
+  # User-Agent al azar
+  ua_idx=$((RANDOM % ${#user_agents[@]}))
+  ua="${user_agents[$ua_idx]}"
+
+  url="http://localhost/${path}"
+  ts="$(date '+%Y-%m-%d %H:%M:%S')"
+
+  # -s silencioso, -o /dev/null descarta body, -w formatea salida
+  curl -s -o /dev/null \
+       -H "User-Agent: ${ua}" \
+       -w "${ts} | %{http_code} | %{time_total}s | ${url}\n" \
+       "${url}"
+
+  sleep 1
+done
+```
+
 ## To do a merge or rebase in github
 
 Locate in the desired branch
@@ -101,13 +152,22 @@ Apply changes
 git push
 ```
 
-## Free up space from docker
+## Docker
+
+Free space
 
 ```bash
 docker system prune -af --volumes
 ```
 
-## Free up space from docker
+Docker image with the GCLOUD command installed
+
+```bash
+docker run -ti gcr.io/google.com/cloudsdktool/google-cloud-cli bash
+gcloud auth login --no-launch-browser
+```
+
+## Write a file pasting directly
 
 ```bash
 cat << EOF | tee your_filename.txt
@@ -117,6 +177,12 @@ EOF
 # Windows command
 
 - Download a file using Windows Powershell `Invoke-WebRequest "https://ejemplo.com/archivo.zip" -OutFile "C:\ruta\donde\guardar\archivo.zip"`
+
+# GCP gcloud command
+
+-  `gcloud auth login --no-launch-browser` 
+-  `gcloud config list`
+- To select your default project `gcloud init`
 
 # Azure CLI
 
