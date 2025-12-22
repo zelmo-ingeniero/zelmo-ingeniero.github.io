@@ -30,6 +30,25 @@ tar -xf <archive name>.tar.gz --strip-components=1 -C <archive name>
 
 Each line stablish how to mount the filesystems on the volumes at every machine restart. More informatiao: [Curso intensivo de Linux: el archivo /etc/fstab](https://youtu.be/A7xH74o6kY0?si=x3mJfgRLfKh-7H9V)
 
+### Chage to users
+
+To change the expiration date of 1 user
+
+```bash
+chage -d $(date +%Y-%m-%d) -I -1 usrinfra1
+```
+
+Where:
+- `-d` set the last password change (current moment)
+- `-I` to remove the password inactivity and reactivate the user
+- by default the next expiration will be in 90 days
+
+Validation
+
+```bash
+chage -l usrinfra1
+```
+
 ## Sed editor
 
 To add new lines with sed run: 
@@ -167,6 +186,14 @@ docker run -ti gcr.io/google.com/cloudsdktool/google-cloud-cli bash
 gcloud auth login --no-launch-browser
 ```
 
+Docker image with .NET installed including the command to install and login to the AZ CLI
+
+```bash
+docker run -it mcr.microsoft.com/dotnet/sdk:8.0
+curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+az login --use-device-code
+```
+
 ## Write a file pasting directly
 
 ```bash
@@ -183,9 +210,11 @@ EOF
 -  `gcloud auth login --no-launch-browser` 
 -  `gcloud config list`
 - To select your default project `gcloud init`
+- Run `gcloud container clusters get-credentials  my-cluster-name --location us-east1` to connect to a specific cluster
 
 # Azure CLI
 
 - Add the last parameter `az login --use-device-code` and give access using the web browser
 - Show your current user with `az ad signed-in-user show`
 - Add current AKS cluster to `./kube/config` file by running `az aks get-credentials -g "rg-aks-exos-test" -n "cluster-aks-test-DD"`
+
