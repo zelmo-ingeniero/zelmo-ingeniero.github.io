@@ -49,6 +49,12 @@ Validation
 chage -l usrinfra1
 ```
 
+To set statically the nest password expiration date
+
+```bash
+chage -d $(date +%Y-%m-%d) -E 2026-12-31 -I -1 my-user
+```
+
 ## Sed editor
 
 To add new lines with sed run: 
@@ -211,6 +217,7 @@ EOF
 -  `gcloud config list`
 - To select your default project `gcloud init`
 - Run `gcloud container clusters get-credentials  my-cluster-name --location us-east1` to connect to a specific cluster
+- Connect to an GCE instance `gcloud compute ssh instance-name --zone=instance-zone`
 
 # Azure CLI
 
