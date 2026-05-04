@@ -28,10 +28,10 @@ wget https://download.docker.com/linux/centos/docker-ce.repo
 Sometimes, the appropiate OS release is not appropiate in that file, if necessary run the next command
 
 ```bash
-sed -i 's/$releasever/8.8/g' docker-ce.repo
+sed -i 's/$releasever/8/g' docker-ce.repo
 ```
 
-Install Docker
+Install Docker (including docker comppose)
 
 ```bash
 dnf -y install containerd.io docker-ce-cli docker-ce
