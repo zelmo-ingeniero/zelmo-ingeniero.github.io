@@ -58,16 +58,16 @@
         </p>
         <ul class="px-4 divide-y divide-gray">
           <li class="py-4">
-            I have generated +50 different lab environments using different clouds and compute engines (such as AWS EC2, AWS Dynamodb, AWS ECS, Azure App Services, GKE, EKS, Docker Compose, and more). All of them with the purpose of instrumenting all of the different Observability modules from Datadog.
+            I have generated +50 different lab environments using different clouds and compute engines (such as AWS EC2, AWS Dynamodb, AWS ECS, Azure App Services, GKE, EKS, Docker Compose, and more). All of them with the purpose of instrumenting all of the different Observability modules from Datadog
           </li>
           <li class="py-4">
             The team and I have helped +20 enterprise level customers by remotely giving them indications of how to implement different Datadog modules in their own Infrastructure, almost always using different cloud providers and services.
           </li>
           <li class="py-4">
-            I have dealt with +15 tickets directly with Datadog Technical Support. I played as the intermediary between the Customers (often Mexicans) and the Datadog engineers, communicating both parts actively to solve the end users' inconveniences, almost always with successful results.
+            I have dealt with +15 tickets directly with Datadog Technical Support. I played as the intermediary between the Customers (often Mexicans) and the Datadog engineers, communicating both parts actively to solve the end users' inconveniences, almost always with successful results
           </li>
           <li class="py-4">
-            For the documentation, I have been creating a knowledge base with +300 pages, including all of the previous instrumentations step by step, commands, screenshots, and even meeting summaries in an easy-to-share format.
+            For the documentation, I have been creating a knowledge base with +300 pages, including all of the previous instrumentations step by step, commands, screenshots, and even meeting summaries in an easy-to-share format
 	  </li>
 	</ul>
         <ul class="flex justify-center flex-wrap pb-20">
@@ -83,24 +83,22 @@
           <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">Database Monitoring</li>
         </ul>
         <p class="mb-2">
-	    <span class="font-bold"> Implementing Infrastructure using AWS, GCP and Azure</span>
+	    <span class="font-bold"> Implementing Infrastructure using AWS and GCP</span>
         </p>
         <ul class="px-4 divide-y divide-gray">
           <li class="py-4">
-            The team and I have managed +25 AWS accounts from different enterprise level customers, commonly at different services (CI/CD, compute, storage, networking, and more), always with the purpose of performing best practices and make optimizations on the accounts. 
+            I have deployed from zero +15 infrastructure resources for many GCP projects (such as dev, qa, prod, etc) via using the GCP CLI with the purpose of make real an arquitechtural diagram. Always considering security and access control and costs on the provider, after finished, everything is documented on an easy to share format
           </li>
           <li class="py-4">
-            I have deployed from zero houndreds of infrastructure resources for +5 GCP projects (such as dev, qa, prod, etc) using the GCP CLI with the purpose of making real an architectural diagram. Always considering security, access control, and costs for the provider, after finishing, everything is documented on an easy-to-share format.
+            The team and I have managed +25 AWS accounts from different enterprise level customers, commonly at different services (CI/CD, compute, storage, networking, and more), always with the purposes of performing the best practices and make optimizations on the accounts. 
           </li>
           <li class="py-4">
-            The team and I have managed completely 1 Azure tenant with +3 subscriptions for one specific partner, involved in all of the different aspects of the tenant (Entra ID, CI/CD, compute, storage, networking, and more) all with the purpose of be compliant of the PCI DSS standard for the customer.
+            The company given me one
+            <span class="italic">expert badge</span> by complete successfully
+            one internal competence
           </li>
           <li class="py-4">
-            The company gave me an
-            <span class="italic">expert badge</span> by completing one internal competence successfully
-          </li>
-          <li class="py-4">
-            I have created one directory structure with credentials and reusable
+            I created one directory structure with credentials and reusable
             infrastructure templates using <span class="italic">HCL</span> (for Terraform)
             and document it using
             <span class="italic">Markdown</span>
@@ -110,7 +108,7 @@
           <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">Linux</li>
           <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">Kubernetes</li>
           <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">AWS</li>
-          <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">CLI</li>
+          <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">Docker</li>
           <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">GCP</li>
           <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">Cybersecurity</li>
           <li class="px-2 py-1 text-sm m-1 rounded-lg bg-gray">Serverless</li>
