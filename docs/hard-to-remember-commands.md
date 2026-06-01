@@ -5,7 +5,6 @@
 - Remove files in /var/yum/cache/ by running `yum clean all`
 - Destroy delete an unmounted  filesystem `wipefs -a /dev/xda`
 - Run `loadkeys us` and `localectl set-keymap us` to change the keyboard layout at OS level
-- Run `journalctl --vacuum-time 45d` to delete journald logs older than 45 days
 - Run `sudo passwd -e` to remove the password to the current user and then in the next login the current user shoould have to assign a new one
 - Run `script` is like a macro for current commands, it creates a new `.sh` script file that contains commands you run after `script` finish the script running `exit`, put a name to the script with the second parameter `script newfile`. More information: [How to use the script command: 2-Minute Linux Tips](https://youtu.be/uzFM9BON-3M) 
 - Run `blkid` to get the UUID of one determined block device
@@ -39,8 +38,8 @@ chage -d $(date +%Y-%m-%d) -I -1 usrinfra1
 ```
 
 Where:
-- `-d` set the last password change (current moment)
-- `-I` to remove the password inactivity and reactivate the user
+- `-d` set the last password change (today)
+- `-I` to remove the password inactivity and then reactivate the user
 - by default the next expiration will be in 90 days
 
 Validation
@@ -53,6 +52,12 @@ To set statically the nest password expiration date
 
 ```bash
 chage -d $(date +%Y-%m-%d) -E 2026-12-31 -I -1 my-user
+```
+
+To set today as last password change while updating the user deactivation date
+
+```bash
+chage -d $(date +%Y-%m-%d) -M 90 root
 ```
 
 ## Sed editor
@@ -225,3 +230,6 @@ EOF
 - Show your current user with `az ad signed-in-user show`
 - Add current AKS cluster to `./kube/config` file by running `az aks get-credentials -g "rg-aks-exos-test" -n "cluster-aks-test-DD"`
 
+# AWS CLI
+
+- Send logs to a given Cloudwatch log group: `aws logs put-log-events     --log-group-name "/aws/waf"     --log-stream-name "manual-test-stream"     --log-events "{\"timestamp\": $(date +%s%3N), \"message\": \"{\\\"hi\\\": \\\"world\\\", \\\"hello\\\": \\\"kitty\\\"}\"}"` 
